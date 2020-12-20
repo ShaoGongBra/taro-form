@@ -1,0 +1,11 @@
+.form-compose {
+  flex-direction: row;
+  &__btn {
+    padding: 20px;
+    flex-shrink: 0;
+    align-items: center;
+  }
+  &__form {
+    flex: 1;
+  }
+}

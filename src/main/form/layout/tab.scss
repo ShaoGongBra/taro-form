@@ -1,0 +1,29 @@
+.form-tab{
+  &--row{
+    flex-direction: row;
+  }
+  &__nav{
+    flex-shrink: 0;
+    align-items: center;
+    &--row{
+      flex-direction: row;
+    }
+    &__item{
+      padding: 10px;
+      border-bottom: 4px solid transparent;
+      &--hover{
+        border-bottom: 4px solid #666;
+      }
+      &__txt{
+        font-size: 28px;
+        color: #333;
+      }
+    }
+  }
+  &__child{
+    flex: 1;
+    &--edit{
+      border: 3px dashed #999;
+    }
+  }
+}

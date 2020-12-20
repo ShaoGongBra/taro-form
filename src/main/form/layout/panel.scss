@@ -1,0 +1,18 @@
+.form-panel {
+  margin: 10px;
+  border: 1px solid #e2e2e2;
+  background-color: #fff;
+  &--edit {
+    border: 3px dashed #999;
+  }
+  &__head {
+    padding: 10px 20px;
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom: 1px solid #e2e2e2;
+    &__title {
+      font-size: 24px;
+      color: #333;
+    }
+  }
+}

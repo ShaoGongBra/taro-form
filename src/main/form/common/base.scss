@@ -1,0 +1,27 @@
+.form-base {
+  &--row {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+  &--center {
+    justify-content: center;
+    align-items: center;
+  }
+  &__text {
+    padding: 10px;
+  }
+  &__main {
+    flex: 1;
+    overflow: hidden;
+  }
+  &__verify {
+    font-size: 24px;
+    color: red;
+    margin-top: 8px;
+  }
+  &__tip {
+    font-size: 26px;
+    color: #666;
+    margin-top: 8px;
+  }
+}

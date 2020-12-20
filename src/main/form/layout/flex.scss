@@ -1,0 +1,11 @@
+.form-flex{
+  flex-direction: row;
+  &--edit{
+  }
+  &__item{
+    flex: 1;
+    &--edit{
+      border: 3px dashed #999;
+    }
+  }
+}

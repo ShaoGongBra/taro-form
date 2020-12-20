@@ -1,0 +1,32 @@
+.form-node-select {
+  &__text {
+    font-size: 24px;
+    color: #333;
+  }
+  &__head {
+    height: 50px;
+    background-color: #fff;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    &__text {
+      font-size: 24px;
+      color: #333;
+    }
+  }
+  &__scroll {
+    height: 700px;
+    background-color: #fff;
+  }
+  &__item {
+    margin-left: 20px;
+    &__text {
+      font-size: 24px;
+      padding: 8px 0;
+      color: #333;
+      &--disable {
+        color: #999;
+      }
+    }
+  }
+}
