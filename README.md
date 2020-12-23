@@ -3,9 +3,12 @@
 ## 在线预览
 http://form.t.platelet.xyz/
 ## 截图
-![](./preview/1.jpg)
-![](./preview/2.jpg)
-![](./preview/3.jpg)
+![](./image/1.jpg)
+![](./image/2.jpg)
+![](./image/3.jpg)
+# 群聊
+qq群：816711392
+![](./image/qq.jpg)
 # 使用
 将代码克隆到本地，执行 `yarn` 或者 `npm install` ，安装依赖，然后执行 `yarn dev:h5` 或者 `npm run dev:h5` 启动h5版本，其他版本尚未兼容
 # 组件支持
@@ -60,9 +63,7 @@ http://form.t.platelet.xyz/
 - 表单禁用（多级子表单禁用）
 - 表单自定义背景
 - 表单整体风格配置
-# 后端实现
+# 编辑实现
 - 可视化表单布局生成
-- 表单自动生成数据库表 待实现
-- 表单数据提交到表单系统 待实现
-- 表单数据统计 待实现
-- 表单与其他模块绑定提交 待实现
+- 表单预览
+- json数据预览
