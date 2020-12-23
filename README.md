@@ -8,7 +8,7 @@ http://form.t.platelet.xyz/
 ![](./image/3.jpg)
 # 群聊
  + qq群：816711392
-![](./image/qq.jpg)
+ + ![](./image/qq.jpg)
 # 使用
 将代码克隆到本地，执行 `yarn` 或者 `npm install` ，安装依赖，然后执行 `yarn dev:h5` 或者 `npm run dev:h5` 启动h5版本，其他版本尚未兼容
 # 组件支持
