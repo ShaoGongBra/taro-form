@@ -6,7 +6,7 @@ http://form.t.platelet.xyz/
 ![](./image/1.jpg)
 ![](./image/2.jpg)
 ![](./image/3.jpg)
-# 群聊
+# TaroForm交流群
  + qq群：816711392
  + ![](./image/qq.jpg)
 # 使用
