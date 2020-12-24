@@ -872,7 +872,7 @@ const config = {
       attr() {
         return {
           ...getPublicAttr.call(this),
-          name: ['shopicon', 'info'],
+          name: ['icon', 'bangzhu1'],
           size: 32,
           color: '#333'
         }
