@@ -1604,24 +1604,24 @@
   dependencies:
     defer-to-connect "^1.0.1"
 
-"@tarojs/api@3.0.18":
-  version "3.0.18"
-  resolved "https://registry.npm.taobao.org/@tarojs/api/download/@tarojs/api-3.0.18.tgz?cache=0&sync_timestamp=1607350113894&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2F%40tarojs%2Fapi%2Fdownload%2F%40tarojs%2Fapi-3.0.18.tgz#e14c540a6e397429d520e2d8e7a37c3690fbdb8a"
-  integrity sha1-4UxUCm45dCnVIOLY56N8NpD724o=
+"@tarojs/api@3.0.21":
+  version "3.0.21"
+  resolved "https://registry.npm.taobao.org/@tarojs/api/download/@tarojs/api-3.0.21.tgz?cache=0&sync_timestamp=1608607832869&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2F%40tarojs%2Fapi%2Fdownload%2F%40tarojs%2Fapi-3.0.21.tgz#924dd466ca98e82210541bf8d671f70e590e8992"
+  integrity sha1-kk3UZsqY6CIQVBv41nH3DlkOiZI=
   dependencies:
-    "@tarojs/runtime" "3.0.18"
+    "@tarojs/runtime" "3.0.21"
 
-"@tarojs/cli@3.0.18":
-  version "3.0.18"
-  resolved "https://registry.npm.taobao.org/@tarojs/cli/download/@tarojs/cli-3.0.18.tgz?cache=0&sync_timestamp=1607350146645&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2F%40tarojs%2Fcli%2Fdownload%2F%40tarojs%2Fcli-3.0.18.tgz#ec1515edca86c9bebf03178d8a397aa4893c5071"
-  integrity sha1-7BUV7cqGyb6/AxeNijl6pIk8UHE=
+"@tarojs/cli@3.0.21":
+  version "3.0.21"
+  resolved "https://registry.npm.taobao.org/@tarojs/cli/download/@tarojs/cli-3.0.21.tgz?cache=0&sync_timestamp=1608605126951&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2F%40tarojs%2Fcli%2Fdownload%2F%40tarojs%2Fcli-3.0.21.tgz#4e6f24b08a934c22765ac0c133caf925dd11dec5"
+  integrity sha1-Tm8ksIqTTCJ2WsDBM8r5Jd0R3sU=
   dependencies:
     "@hapi/joi" "17.1.1"
-    "@tarojs/helper" "3.0.18"
-    "@tarojs/service" "3.0.18"
-    "@tarojs/shared" "3.0.18"
-    "@tarojs/taro" "3.0.18"
-    "@tarojs/taroize" "3.0.18"
+    "@tarojs/helper" "3.0.21"
+    "@tarojs/service" "3.0.21"
+    "@tarojs/shared" "3.0.21"
+    "@tarojs/taro" "3.0.21"
+    "@tarojs/taroize" "3.0.21"
     "@tarojs/transformer-wx" "^2.0.4"
     "@types/request" "^2.48.1"
     "@typescript-eslint/parser" "^2.0.0"
@@ -1649,11 +1649,11 @@
     ejs "^2.6.1"
     envinfo "^6.0.1"
     eslint "^6.1.0"
-    eslint-config-taro "3.0.18"
+    eslint-config-taro "3.0.21"
     eslint-plugin-import "^2.8.0"
     eslint-plugin-react "^7.4.0"
     eslint-plugin-react-hooks "^1.6.1"
-    eslint-plugin-taro "3.0.18"
+    eslint-plugin-taro "3.0.21"
     eslint-plugin-vue "^6.2.2"
     fbjs "^1.0.0"
     find-yarn-workspace-root "1.2.1"
@@ -1676,7 +1676,7 @@
     postcss-modules-resolve-imports "^1.3.0"
     postcss-modules-scope "^1.1.0"
     postcss-modules-values "^1.3.0"
-    postcss-pxtransform "3.0.18"
+    postcss-pxtransform "3.0.21"
     postcss-reporter "^6.0.1"
     postcss-taro-unit-transform "1.2.15"
     postcss-url "^7.3.2"
@@ -1696,13 +1696,13 @@
     xml2js "^0.4.19"
     xxhashjs "^0.2.2"
 
-"@tarojs/components@3.0.18":
-  version "3.0.18"
-  resolved "https://registry.npm.taobao.org/@tarojs/components/download/@tarojs/components-3.0.18.tgz?cache=0&sync_timestamp=1607350187333&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2F%40tarojs%2Fcomponents%2Fdownload%2F%40tarojs%2Fcomponents-3.0.18.tgz#a02fe5b1dfc3f3ce1cb00aba9f6cb6792b22d1a2"
-  integrity sha1-oC/lsd/D884csAq6n2y2eSsi0aI=
+"@tarojs/components@3.0.21":
+  version "3.0.21"
+  resolved "https://registry.npm.taobao.org/@tarojs/components/download/@tarojs/components-3.0.21.tgz?cache=0&sync_timestamp=1608605131507&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2F%40tarojs%2Fcomponents%2Fdownload%2F%40tarojs%2Fcomponents-3.0.21.tgz#375646c5c80eb68e44db72d6ddaaab75b5523c29"
+  integrity sha1-N1ZGxcgOto5E23LW3aqrdbVSPCk=
   dependencies:
     "@stencil/core" "~1.8.1"
-    "@tarojs/taro" "3.0.18"
+    "@tarojs/taro" "3.0.21"
     better-scroll "^1.14.1"
     classnames "^2.2.5"
     intersection-observer "^0.7.0"
@@ -1711,10 +1711,10 @@
     swiper "4.4.2"
     weui "^1.1.2"
 
-"@tarojs/helper@3.0.18":
-  version "3.0.18"
-  resolved "https://registry.npm.taobao.org/@tarojs/helper/download/@tarojs/helper-3.0.18.tgz?cache=0&sync_timestamp=1607350131425&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2F%40tarojs%2Fhelper%2Fdownload%2F%40tarojs%2Fhelper-3.0.18.tgz#78c1773978c8dfc010cf4561f849749bdd79800a"
-  integrity sha1-eMF3OXjI38AQz0Vh+El0m915gAo=
+"@tarojs/helper@3.0.21":
+  version "3.0.21"
+  resolved "https://registry.npm.taobao.org/@tarojs/helper/download/@tarojs/helper-3.0.21.tgz?cache=0&sync_timestamp=1608605130432&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2F%40tarojs%2Fhelper%2Fdownload%2F%40tarojs%2Fhelper-3.0.21.tgz#4e7c3b5333248d631a85a58f904f04d914d8e312"
+  integrity sha1-Tnw7UzMkjWMahaWPkE8E2RTY4xI=
   dependencies:
     "@babel/core" "7.11.1"
     "@babel/plugin-proposal-class-properties" "7.10.4"
@@ -1725,7 +1725,7 @@
     "@babel/preset-typescript" "7.10.4"
     "@babel/register" "7.9.0"
     "@babel/runtime" "7.9.2"
-    "@tarojs/taro" "3.0.18"
+    "@tarojs/taro" "3.0.21"
     babel-plugin-transform-react-jsx "^6.24.1"
     chalk "3.0.0"
     chokidar "3.3.1"
@@ -1737,23 +1737,23 @@
     resolve "1.15.1"
     yauzl "2.10.0"
 
-"@tarojs/mini-runner@3.0.18":
-  version "3.0.18"
-  resolved "https://registry.npm.taobao.org/@tarojs/mini-runner/download/@tarojs/mini-runner-3.0.18.tgz?cache=0&sync_timestamp=1607350188742&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2F%40tarojs%2Fmini-runner%2Fdownload%2F%40tarojs%2Fmini-runner-3.0.18.tgz#eef72f784435893260663938b4c8ca0b2e45f954"
-  integrity sha1-7vcveEQ1iTJgZjk4tMjKCy5F+VQ=
+"@tarojs/mini-runner@3.0.21":
+  version "3.0.21"
+  resolved "https://registry.npm.taobao.org/@tarojs/mini-runner/download/@tarojs/mini-runner-3.0.21.tgz#1c197064781b55c9672bfbb092bc6520056a27fc"
+  integrity sha1-HBlwZHgbVclnK/uwkrxlIAVqJ/w=
   dependencies:
     "@babel/core" "7.11.1"
     "@babel/plugin-proposal-class-properties" "7.10.4"
     "@babel/preset-env" "7.11.0"
-    "@tarojs/helper" "3.0.18"
-    "@tarojs/runner-utils" "3.0.18"
-    "@tarojs/runtime" "3.0.18"
-    "@tarojs/shared" "3.0.18"
-    "@tarojs/taro" "3.0.18"
-    "@tarojs/taro-loader" "3.0.18"
+    "@tarojs/helper" "3.0.21"
+    "@tarojs/runner-utils" "3.0.21"
+    "@tarojs/runtime" "3.0.21"
+    "@tarojs/shared" "3.0.21"
+    "@tarojs/taro" "3.0.21"
+    "@tarojs/taro-loader" "3.0.21"
     babel-loader "8.0.6"
     babel-types "^6.26.0"
-    copy-webpack-plugin "^5.0.3"
+    copy-webpack-plugin "5.1.2"
     css "2.2.4"
     css-loader "^3.0.0"
     css-what "3.3.0"
@@ -1791,93 +1791,95 @@
     webpack-format-messages "^2.0.5"
     yauzl "2.10.0"
 
-"@tarojs/react@3.0.18":
-  version "3.0.18"
-  resolved "https://registry.npm.taobao.org/@tarojs/react/download/@tarojs/react-3.0.18.tgz?cache=0&sync_timestamp=1607350184566&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2F%40tarojs%2Freact%2Fdownload%2F%40tarojs%2Freact-3.0.18.tgz#1b287914bbde87f024e9ceae1f6c1857b133304a"
-  integrity sha1-Gyh5FLveh/Ak6c6uH2wYV7EzMEo=
+"@tarojs/react@3.0.21":
+  version "3.0.21"
+  resolved "https://registry.npm.taobao.org/@tarojs/react/download/@tarojs/react-3.0.21.tgz#ca24b453d80e430afe4b4ed64ca844635d159d38"
+  integrity sha1-yiS0U9gOQwr+S07WTKhEY10VnTg=
   dependencies:
-    "@tarojs/runtime" "3.0.18"
+    "@tarojs/runtime" "3.0.21"
     react-reconciler "^0.23.0"
     scheduler "^0.17.0"
 
-"@tarojs/router@3.0.18":
-  version "3.0.18"
-  resolved "https://registry.npm.taobao.org/@tarojs/router/download/@tarojs/router-3.0.18.tgz?cache=0&sync_timestamp=1607350117528&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2F%40tarojs%2Frouter%2Fdownload%2F%40tarojs%2Frouter-3.0.18.tgz#570f9b74b2d7588dbd2ae8a56690ee253f7c36a3"
-  integrity sha1-Vw+bdLLXWI29KuilZpDuJT98NqM=
+"@tarojs/router@3.0.21":
+  version "3.0.21"
+  resolved "https://registry.npm.taobao.org/@tarojs/router/download/@tarojs/router-3.0.21.tgz?cache=0&sync_timestamp=1608605147059&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2F%40tarojs%2Frouter%2Fdownload%2F%40tarojs%2Frouter-3.0.21.tgz#bad77172b73f5ba6c41b48c57866583834392e02"
+  integrity sha1-utdxcrc/W6bEG0jFeGZYODQ5LgI=
   dependencies:
-    "@tarojs/runtime" "3.0.18"
+    "@tarojs/runtime" "3.0.21"
     history "^4.10.1"
     universal-router "^8.3.0"
     url-parse "^1.4.7"
 
-"@tarojs/runner-utils@3.0.18":
-  version "3.0.18"
-  resolved "https://registry.npm.taobao.org/@tarojs/runner-utils/download/@tarojs/runner-utils-3.0.18.tgz?cache=0&sync_timestamp=1607350186361&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2F%40tarojs%2Frunner-utils%2Fdownload%2F%40tarojs%2Frunner-utils-3.0.18.tgz#0c4cdc0bea450dd35f807569e6b38c888825b307"
-  integrity sha1-DEzcC+pFDdNfgHVp5rOMiIglswc=
+"@tarojs/runner-utils@3.0.21":
+  version "3.0.21"
+  resolved "https://registry.npm.taobao.org/@tarojs/runner-utils/download/@tarojs/runner-utils-3.0.21.tgz?cache=0&sync_timestamp=1608605131817&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2F%40tarojs%2Frunner-utils%2Fdownload%2F%40tarojs%2Frunner-utils-3.0.21.tgz#f5fdeb6d289fdd87f59c3178cfd0cf19ef8a5f2a"
+  integrity sha1-9f3rbSif3Yf1nDF4z9DPGe+KXyo=
   dependencies:
     "@babel/core" "7.11.1"
-    "@tarojs/helper" "3.0.18"
+    "@tarojs/helper" "3.0.21"
     chalk "^3.0.0"
     fs-extra "^8.1.0"
     lodash "^4.17.15"
     scss-bundle "^3.0.2"
 
-"@tarojs/runtime@3.0.18":
-  version "3.0.18"
-  resolved "https://registry.npm.taobao.org/@tarojs/runtime/download/@tarojs/runtime-3.0.18.tgz?cache=0&sync_timestamp=1607350113515&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2F%40tarojs%2Fruntime%2Fdownload%2F%40tarojs%2Fruntime-3.0.18.tgz#5786a81da06a1c57ecb795a335a5750542a96a57"
-  integrity sha1-V4aoHaBqHFfst5WjNaV1BUKpalc=
+"@tarojs/runtime@3.0.21":
+  version "3.0.21"
+  resolved "https://registry.npm.taobao.org/@tarojs/runtime/download/@tarojs/runtime-3.0.21.tgz?cache=0&sync_timestamp=1608605127223&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2F%40tarojs%2Fruntime%2Fdownload%2F%40tarojs%2Fruntime-3.0.21.tgz#1d8f1761d5a7f08dcb6da1a1f329f174ad5918e1"
+  integrity sha1-HY8XYdWn8I3LbaGh8ynxdK1ZGOE=
+  dependencies:
+    lodash-es "4.17.15"
 
-"@tarojs/service@3.0.18":
-  version "3.0.18"
-  resolved "https://registry.npm.taobao.org/@tarojs/service/download/@tarojs/service-3.0.18.tgz?cache=0&sync_timestamp=1607350126363&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2F%40tarojs%2Fservice%2Fdownload%2F%40tarojs%2Fservice-3.0.18.tgz#31ac5445d2f0b7710c56c93c5c407f11834a803a"
-  integrity sha1-MaxURdLwt3EMVsk8XEB/EYNKgDo=
+"@tarojs/service@3.0.21":
+  version "3.0.21"
+  resolved "https://registry.npm.taobao.org/@tarojs/service/download/@tarojs/service-3.0.21.tgz?cache=0&sync_timestamp=1608605130759&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2F%40tarojs%2Fservice%2Fdownload%2F%40tarojs%2Fservice-3.0.21.tgz#8a354c178f25de51d9df87711ee032bd971be846"
+  integrity sha1-ijVMF48l3lHZ34dxHuAyvZcb6EY=
   dependencies:
     "@hapi/joi" "17.1.1"
-    "@tarojs/helper" "3.0.18"
-    "@tarojs/taro" "3.0.18"
+    "@tarojs/helper" "3.0.21"
+    "@tarojs/taro" "3.0.21"
     fs-extra "8.1.0"
     lodash "4.17.20"
     resolve "1.15.1"
     tapable "1.1.3"
 
-"@tarojs/shared@3.0.18":
-  version "3.0.18"
-  resolved "https://registry.npm.taobao.org/@tarojs/shared/download/@tarojs/shared-3.0.18.tgz?cache=0&sync_timestamp=1607350110253&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2F%40tarojs%2Fshared%2Fdownload%2F%40tarojs%2Fshared-3.0.18.tgz#5da6088ee281e24140d4ffa0905859a209444b27"
-  integrity sha1-XaYIjuKB4kFA1P+gkFhZoglESyc=
+"@tarojs/shared@3.0.21":
+  version "3.0.21"
+  resolved "https://registry.npm.taobao.org/@tarojs/shared/download/@tarojs/shared-3.0.21.tgz?cache=0&sync_timestamp=1608607038929&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2F%40tarojs%2Fshared%2Fdownload%2F%40tarojs%2Fshared-3.0.21.tgz#cdd1f601eaa3c161dbb5ed01059be5244ce633aa"
+  integrity sha1-zdH2AeqjwWHbte0BBZvlJEzmM6o=
 
-"@tarojs/taro-h5@3.0.18":
-  version "3.0.18"
-  resolved "https://registry.npm.taobao.org/@tarojs/taro-h5/download/@tarojs/taro-h5-3.0.18.tgz?cache=0&sync_timestamp=1607350121865&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2F%40tarojs%2Ftaro-h5%2Fdownload%2F%40tarojs%2Ftaro-h5-3.0.18.tgz#cd0b1ea788a4da41b1571c6067ccf3405a165af7"
-  integrity sha1-zQsep4ik2kGxVxxgZ8zzQFoWWvc=
+"@tarojs/taro-h5@3.0.21":
+  version "3.0.21"
+  resolved "https://registry.npm.taobao.org/@tarojs/taro-h5/download/@tarojs/taro-h5-3.0.21.tgz?cache=0&sync_timestamp=1608605132231&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2F%40tarojs%2Ftaro-h5%2Fdownload%2F%40tarojs%2Ftaro-h5-3.0.21.tgz#60cc409bbc7ade3193726d1e271a3bf5d05d6297"
+  integrity sha1-YMxAm7x63jGTcm0eJxo79dBdYpc=
   dependencies:
-    "@tarojs/api" "3.0.18"
-    "@tarojs/router" "3.0.18"
-    "@tarojs/runtime" "3.0.18"
+    "@tarojs/api" "3.0.21"
+    "@tarojs/router" "3.0.21"
+    "@tarojs/runtime" "3.0.21"
     base64-js "^1.3.0"
     jsonp-retry "^1.0.3"
     mobile-detect "^1.4.2"
     raf "^3.4.1"
     whatwg-fetch "^3.4.0"
 
-"@tarojs/taro-loader@3.0.18":
-  version "3.0.18"
-  resolved "https://registry.npm.taobao.org/@tarojs/taro-loader/download/@tarojs/taro-loader-3.0.18.tgz?cache=0&sync_timestamp=1607350182870&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2F%40tarojs%2Ftaro-loader%2Fdownload%2F%40tarojs%2Ftaro-loader-3.0.18.tgz#804d61444c3743546e3762685a5aee19ac967cf3"
-  integrity sha1-gE1hREw3Q1RuN2JoWlruGayWfPM=
+"@tarojs/taro-loader@3.0.21":
+  version "3.0.21"
+  resolved "https://registry.npm.taobao.org/@tarojs/taro-loader/download/@tarojs/taro-loader-3.0.21.tgz?cache=0&sync_timestamp=1608605130601&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2F%40tarojs%2Ftaro-loader%2Fdownload%2F%40tarojs%2Ftaro-loader-3.0.21.tgz#44c7277ade99f1dd9155089ab6777092158a755e"
+  integrity sha1-RMcnet6Z8d2RVQiatndwkhWKdV4=
   dependencies:
     loader-utils "^1.2.3"
 
-"@tarojs/taro@3.0.18":
-  version "3.0.18"
-  resolved "https://registry.npm.taobao.org/@tarojs/taro/download/@tarojs/taro-3.0.18.tgz?cache=0&sync_timestamp=1607350128578&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2F%40tarojs%2Ftaro%2Fdownload%2F%40tarojs%2Ftaro-3.0.18.tgz#add99083ea912ce23386618cf91a0fd462de8add"
-  integrity sha1-rdmQg+qRLOIzhmGM+RoP1GLeit0=
+"@tarojs/taro@3.0.21":
+  version "3.0.21"
+  resolved "https://registry.npm.taobao.org/@tarojs/taro/download/@tarojs/taro-3.0.21.tgz?cache=0&sync_timestamp=1608605133118&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2F%40tarojs%2Ftaro%2Fdownload%2F%40tarojs%2Ftaro-3.0.21.tgz#767ea62e05e764d32456b3e5f124b6e3dd275043"
+  integrity sha1-dn6mLgXnZNMkVrPl8SS2490nUEM=
   dependencies:
-    "@tarojs/api" "3.0.18"
-    "@tarojs/taro-h5" "3.0.18"
+    "@tarojs/api" "3.0.21"
+    "@tarojs/taro-h5" "3.0.21"
 
-"@tarojs/taroize@3.0.18":
-  version "3.0.18"
-  resolved "https://registry.npm.taobao.org/@tarojs/taroize/download/@tarojs/taroize-3.0.18.tgz?cache=0&sync_timestamp=1607348224210&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2F%40tarojs%2Ftaroize%2Fdownload%2F%40tarojs%2Ftaroize-3.0.18.tgz#2ae70663bcac5a2521dd22d66117869a6d941179"
-  integrity sha1-KucGY7ysWiUh3SLWYReGmm2UEXk=
+"@tarojs/taroize@3.0.21":
+  version "3.0.21"
+  resolved "https://registry.npm.taobao.org/@tarojs/taroize/download/@tarojs/taroize-3.0.21.tgz?cache=0&sync_timestamp=1608605130236&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2F%40tarojs%2Ftaroize%2Fdownload%2F%40tarojs%2Ftaroize-3.0.21.tgz#04b41276444e1f153f0424b299f5f000d1b6fad3"
+  integrity sha1-BLQSdkROHxU/BCSymfXwANG2+tM=
   dependencies:
     "@babel/code-frame" "^7.0.0"
     babel-core "^6.26.3"
@@ -1923,17 +1925,17 @@
     prettier "^1.14.2"
     typescript "^3.2.2"
 
-"@tarojs/webpack-runner@3.0.18":
-  version "3.0.18"
-  resolved "https://registry.npm.taobao.org/@tarojs/webpack-runner/download/@tarojs/webpack-runner-3.0.18.tgz?cache=0&sync_timestamp=1607350189124&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2F%40tarojs%2Fwebpack-runner%2Fdownload%2F%40tarojs%2Fwebpack-runner-3.0.18.tgz#83bb9e79abf3622dcf40465bd10c043277a1dac7"
-  integrity sha1-g7ueeavzYi3PQEZb0QwEMneh2sc=
+"@tarojs/webpack-runner@3.0.21":
+  version "3.0.21"
+  resolved "https://registry.npm.taobao.org/@tarojs/webpack-runner/download/@tarojs/webpack-runner-3.0.21.tgz?cache=0&sync_timestamp=1608605126187&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2F%40tarojs%2Fwebpack-runner%2Fdownload%2F%40tarojs%2Fwebpack-runner-3.0.21.tgz#845960a71da1eb6ff8a01b20a30e1f556348b20c"
+  integrity sha1-hFlgpx2h62/4oBsgow4fVWNIsgw=
   dependencies:
     "@babel/core" "7.11.1"
-    "@tarojs/helper" "3.0.18"
-    "@tarojs/runner-utils" "3.0.18"
-    "@tarojs/runtime" "3.0.18"
-    "@tarojs/shared" "3.0.18"
-    "@tarojs/taro-loader" "3.0.18"
+    "@tarojs/helper" "3.0.21"
+    "@tarojs/runner-utils" "3.0.21"
+    "@tarojs/runtime" "3.0.21"
+    "@tarojs/shared" "3.0.21"
+    "@tarojs/taro-loader" "3.0.21"
     autoprefixer "9.7.4"
     babel-loader "8.0.6"
     copy-webpack-plugin "5.1.1"
@@ -1951,8 +1953,8 @@
     open "7.0.2"
     ora "4.0.3"
     postcss-loader "3.0.0"
-    postcss-plugin-constparse "3.0.18"
-    postcss-pxtransform "3.0.18"
+    postcss-plugin-constparse "3.0.21"
+    postcss-pxtransform "3.0.21"
     resolve "1.15.1"
     resolve-url-loader "3.1.1"
     sass "^1.25.0"
@@ -3250,10 +3252,10 @@ babel-plugin-transform-taroapi@1.3.15:
   resolved "https://registry.npm.taobao.org/babel-plugin-transform-taroapi/download/babel-plugin-transform-taroapi-1.3.15.tgz#413de3cc47389387bbd36be292d8945d36caf52e"
   integrity sha1-QT3jzEc4k4e702viktiUXTbK9S4=
 
-babel-plugin-transform-taroapi@3.0.18:
-  version "3.0.18"
-  resolved "https://registry.npm.taobao.org/babel-plugin-transform-taroapi/download/babel-plugin-transform-taroapi-3.0.18.tgz#0b495b402275bd5f155ee36d27b43d71f8375b60"
-  integrity sha1-C0lbQCJ1vV8VXuNtJ7Q9cfg3W2A=
+babel-plugin-transform-taroapi@3.0.21:
+  version "3.0.21"
+  resolved "https://registry.npm.taobao.org/babel-plugin-transform-taroapi/download/babel-plugin-transform-taroapi-3.0.21.tgz?cache=0&sync_timestamp=1608607038469&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fbabel-plugin-transform-taroapi%2Fdownload%2Fbabel-plugin-transform-taroapi-3.0.21.tgz#e242bf5834d979b098dc5285e468e94a80308392"
+  integrity sha1-4kK/WDTZebCY3FKF5GjpSoAwg5I=
 
 babel-preset-fbjs@^3.2.0, babel-preset-fbjs@^3.3.0:
   version "3.3.0"
@@ -3288,10 +3290,10 @@ babel-preset-fbjs@^3.2.0, babel-preset-fbjs@^3.3.0:
     "@babel/plugin-transform-template-literals" "^7.0.0"
     babel-plugin-syntax-trailing-function-commas "^7.0.0-beta.0"
 
-babel-preset-taro@3.0.18:
-  version "3.0.18"
-  resolved "https://registry.npm.taobao.org/babel-preset-taro/download/babel-preset-taro-3.0.18.tgz?cache=0&sync_timestamp=1607350185599&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fbabel-preset-taro%2Fdownload%2Fbabel-preset-taro-3.0.18.tgz#e82e8c3035a56c57ae1bb79a38527d38e278ea13"
-  integrity sha1-6C6MMDWlbFeuG7eaOFJ9OOJ46hM=
+babel-preset-taro@3.0.21:
+  version "3.0.21"
+  resolved "https://registry.npm.taobao.org/babel-preset-taro/download/babel-preset-taro-3.0.21.tgz#9ea9f2938dbd0317a1532220c319bce2bc73b350"
+  integrity sha1-nqnyk429AxehUyIgwxm84rxzs1A=
   dependencies:
     "@babel/core" "7.11.1"
     "@babel/plugin-proposal-class-properties" "7.10.4"
@@ -3302,9 +3304,9 @@ babel-preset-taro@3.0.18:
     "@babel/preset-react" "7.10.4"
     "@babel/preset-typescript" "7.10.4"
     "@babel/runtime" "^7.11.2"
-    "@tarojs/taro-h5" "3.0.18"
+    "@tarojs/taro-h5" "3.0.21"
     babel-plugin-dynamic-import-node "^2.3.3"
-    babel-plugin-transform-taroapi "3.0.18"
+    babel-plugin-transform-taroapi "3.0.21"
     core-js "^3.6.5"
 
 babel-register@^6.26.0, babel-register@^6.9.0:
@@ -4616,9 +4618,9 @@ copy-webpack-plugin@5.1.1:
     serialize-javascript "^2.1.2"
     webpack-log "^2.0.0"
 
-copy-webpack-plugin@^5.0.3:
+copy-webpack-plugin@5.1.2:
   version "5.1.2"
-  resolved "https://registry.npm.taobao.org/copy-webpack-plugin/download/copy-webpack-plugin-5.1.2.tgz?cache=0&sync_timestamp=1605282119107&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fcopy-webpack-plugin%2Fdownload%2Fcopy-webpack-plugin-5.1.2.tgz#8a889e1dcafa6c91c6cd4be1ad158f1d3823bae2"
+  resolved "https://registry.npm.taobao.org/copy-webpack-plugin/download/copy-webpack-plugin-5.1.2.tgz?cache=0&sync_timestamp=1608126698047&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fcopy-webpack-plugin%2Fdownload%2Fcopy-webpack-plugin-5.1.2.tgz#8a889e1dcafa6c91c6cd4be1ad158f1d3823bae2"
   integrity sha1-ioieHcr6bJHGzUvhrRWPHTgjuuI=
   dependencies:
     cacache "^12.0.3"
@@ -5781,10 +5783,10 @@ escodegen@^1.11.1:
   optionalDependencies:
     source-map "~0.6.1"
 
-eslint-config-taro@3.0.18:
-  version "3.0.18"
-  resolved "https://registry.npm.taobao.org/eslint-config-taro/download/eslint-config-taro-3.0.18.tgz?cache=0&sync_timestamp=1607350109859&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Feslint-config-taro%2Fdownload%2Feslint-config-taro-3.0.18.tgz#ece81de571baf07cbd97e05c05fad66c29f1e203"
-  integrity sha1-7Ogd5XG68Hy9l+BcBfrWbCnx4gM=
+eslint-config-taro@3.0.21:
+  version "3.0.21"
+  resolved "https://registry.npm.taobao.org/eslint-config-taro/download/eslint-config-taro-3.0.21.tgz#6da48b2d50a1f3dab39a4691b54362382c333744"
+  integrity sha1-baSLLVCh89qzmkaRtUNiOCwzN0Q=
   dependencies:
     "@typescript-eslint/parser" "^2.x"
     babel-eslint "^10.0.0"
@@ -5856,10 +5858,10 @@ eslint-plugin-react@^7.4.0, eslint-plugin-react@^7.8.2:
     resolve "^1.18.1"
     string.prototype.matchall "^4.0.2"
 
-eslint-plugin-taro@3.0.18:
-  version "3.0.18"
-  resolved "https://registry.npm.taobao.org/eslint-plugin-taro/download/eslint-plugin-taro-3.0.18.tgz?cache=0&sync_timestamp=1607348222192&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Feslint-plugin-taro%2Fdownload%2Feslint-plugin-taro-3.0.18.tgz#1be1b07899fbab27e1e994d2d34264140433e5a7"
-  integrity sha1-G+GweJn7qyfh6ZTS00JkFAQz5ac=
+eslint-plugin-taro@3.0.21:
+  version "3.0.21"
+  resolved "https://registry.npm.taobao.org/eslint-plugin-taro/download/eslint-plugin-taro-3.0.21.tgz?cache=0&sync_timestamp=1608607045798&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Feslint-plugin-taro%2Fdownload%2Feslint-plugin-taro-3.0.21.tgz#35d4ee0410abcf6d0bdfa891dbe144dfe623e7ec"
+  integrity sha1-NdTuBBCrz20L36iR2+FE3+Yj5+w=
   dependencies:
     has "^1.0.1"
 
@@ -9162,6 +9164,11 @@ locate-path@^5.0.0:
   dependencies:
     p-locate "^4.1.0"
 
+lodash-es@4.17.15:
+  version "4.17.15"
+  resolved "https://registry.npm.taobao.org/lodash-es/download/lodash-es-4.17.15.tgz?cache=0&sync_timestamp=1608444862136&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Flodash-es%2Fdownload%2Flodash-es-4.17.15.tgz#21bd96839354412f23d7a10340e5eac6ee455d78"
+  integrity sha1-Ib2Wg5NUQS8j16EDQOXqxu5FXXg=
+
 lodash.clonedeep@^4.5.0:
   version "4.5.0"
   resolved "https://registry.npm.taobao.org/lodash.clonedeep/download/lodash.clonedeep-4.5.0.tgz#e23f3f9c4f8fbdde872529c1071857a086e5ccef"
@@ -11509,10 +11516,10 @@ postcss-modules-values@^3.0.0:
     icss-utils "^4.0.0"
     postcss "^7.0.6"
 
-postcss-plugin-constparse@3.0.18:
-  version "3.0.18"
-  resolved "https://registry.npm.taobao.org/postcss-plugin-constparse/download/postcss-plugin-constparse-3.0.18.tgz?cache=0&sync_timestamp=1607350181106&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fpostcss-plugin-constparse%2Fdownload%2Fpostcss-plugin-constparse-3.0.18.tgz#3df444e4849fe3cac1fc9b73239f0693de493a50"
-  integrity sha1-PfRE5ISf48rB/JtzI58Gk95JOlA=
+postcss-plugin-constparse@3.0.21:
+  version "3.0.21"
+  resolved "https://registry.npm.taobao.org/postcss-plugin-constparse/download/postcss-plugin-constparse-3.0.21.tgz?cache=0&sync_timestamp=1608605135151&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fpostcss-plugin-constparse%2Fdownload%2Fpostcss-plugin-constparse-3.0.21.tgz#d39dbd177baf97cd70c9f254961f86762ce74167"
+  integrity sha1-0529F3uvl81wyfJUlh+GdiznQWc=
   dependencies:
     postcss "^6.0.22"
 
@@ -11524,10 +11531,10 @@ postcss-pxtorem@^4.0.1:
     object-assign "^4.1.0"
     postcss "^5.2.10"
 
-postcss-pxtransform@3.0.18:
-  version "3.0.18"
-  resolved "https://registry.npm.taobao.org/postcss-pxtransform/download/postcss-pxtransform-3.0.18.tgz#2dddd4e6e803e62d74c5499bc85cdc9f34172819"
-  integrity sha1-Ld3U5ugD5i10xUmbyFzcnzQXKBk=
+postcss-pxtransform@3.0.21:
+  version "3.0.21"
+  resolved "https://registry.npm.taobao.org/postcss-pxtransform/download/postcss-pxtransform-3.0.21.tgz?cache=0&sync_timestamp=1608607040037&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fpostcss-pxtransform%2Fdownload%2Fpostcss-pxtransform-3.0.21.tgz#442a43e11b487c75ba8d0129ca5066a216734174"
+  integrity sha1-RCpD4RtIfHW6jQEpylBmohZzQXQ=
   dependencies:
     postcss "^6.0.16"
     postcss-pxtorem "^4.0.1"
