@@ -2,7 +2,8 @@ import React, { Component } from 'react'
 import Create from './create'
 
 import { verify } from '../../utils'
-import { recursionSetValue, recursionGetValue, chechWhere, getFormDefaultValue } from './util'
+import { recursionSetValue, recursionGetValue } from '../../utils/object'
+import { chechWhere, getFormDefaultValue } from './util'
 
 import './form.scss'
 

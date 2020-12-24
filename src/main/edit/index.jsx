@@ -10,7 +10,7 @@ import Create from '../form/create'
 import Form from '../form/form'
 import EditTypes from './editTypes'
 import comp from './comp'
-import { recursionSetValue, recursionGetValue } from '../form/util'
+import { recursionSetValue, recursionGetValue } from '../../utils/object'
 import testData from '../form/testData'
 import './index.scss'
 

@@ -66,45 +66,6 @@ const getFormDefaultValue = (form, value = {}) => {
 }
 
 /**
- * 递归设置value
- * @param {array} keys key数组
- * @param {object|array} data 被设置的对象
- * @param {any} value 要设置的值
- * @param {string} child 在递归时要调用的子集字段
- * @param {boolean} splice 使用使用splice插入数据 仅支持数组
- */
-const recursionSetValue = (keys, data, value, childKey, splice = false) => {
-  keys = [...keys]
-  if (keys.length === 1) {
-    if (splice) {
-      data.splice(keys[0], 0, value)
-    } else {
-      data[keys[0]] = value
-    }
-  } else {
-    if (childKey && data[keys[0]][childKey] === undefined) {
-      data[keys[0]][childKey] = []
-    }
-    recursionSetValue(keys.slice(1), childKey ? data[keys[0]][childKey] : data[keys[0]], value, childKey, splice)
-  }
-}
-
-/**
- * 递归获取value
- * @param {array} keys key数组
- * @param {object|array} data 被获取的对象
- * @param {string} childKey 在递归时要调用的子集字段
- * @param {boolean} splice 是否将此值删除 仅支持数组
- */
-const recursionGetValue = (keys, data, childKey, splice = false) => {
-  if (keys.length === 1) {
-    return splice ? data.splice(keys[0], 1)[0] : data[keys[0]]
-  } else {
-    return recursionGetValue(keys.slice(1), childKey === undefined ? data[keys[0]] : data[keys[0]][childKey], childKey, splice)
-  }
-}
-
-/**
  * 传入两个值 和判断条件 判断是否正确
  * @param {any} value 要判断的值
  * @param {any} beValue 被判断的值
@@ -157,8 +118,6 @@ const ConfigContext = React.createContext({})
 
 export {
   getFormDefaultValue,
-  recursionSetValue,
-  recursionGetValue,
   chechWhere,
   ConfigContext
 }
