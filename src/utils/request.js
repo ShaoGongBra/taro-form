@@ -5,13 +5,20 @@ import { recursionGetValue, recursionSetValue } from './object'
 const { request: requestConfig, result: resultConfig, upload: uploadConfig } = config.request
 
 /**
- *
- * @param {object} data 将对象转化为form表单数据
+ * 将对象转化为form表单数据
+ * @param {object} data 要转化的数据
+ * @return {string} 转化后的url
  */
 const objectToForm = data => encodeURIComponent(Object.keys(data).map(key => `${key}=${data[key]}`).join('&'))
 
+/**
+ * 获取请求url
+ * @param {string} url api
+ * @param {object} data 要加在url上的get参数
+ * @return {string} 完整请求url
+ */
 const getUrl = (url, data = {}) => {
-  if (url.indexOf('http://') == -1 && url.indexOf('https://') == -1) {
+  if (url.indexOf('http://') === -1 && url.indexOf('https://') === -1) {
     let urls = []
     if (process.env.NODE_ENV === 'production' && process.env.TARO_ENV === 'h5' && !!window.REQUEST_ORIGIN) {
       // 使用本地域名
@@ -53,6 +60,7 @@ const request = ({ url, header = {}, data = {}, method = 'POST' }) => {
         : {},
       header: {
         ...requestConfig.header,
+        'Content-Type': requestConfig.contentType,
         ...header
       },
       method,
@@ -91,7 +99,7 @@ const request = ({ url, header = {}, data = {}, method = 'POST' }) => {
  * @param {number} count
  * @param {string} mediaType
  */
-const getMedia = (count = 1, mediaType = 'photo') => {
+const getMedia = (count = 1, mediaType) => {
   if (mediaType === 'video') {
     return Taro.chooseVideo({}).then(res => ([{
       path: res.tempFilePath,
@@ -110,7 +118,7 @@ const getMedia = (count = 1, mediaType = 'photo') => {
 /**
  * 图片及视频上传方法
  * @param {number} count 需要上传的最大数量
- * @param {string} mediaType 选择的类型 photo 图片 video视频
+ * @param {string} mediaType 选择的类型 image 图片 video视频
  * @return {promise} {
  *  start: function 开始上传通知
  *  progress: function 上传进度通知 会多次回调
@@ -119,15 +127,14 @@ const getMedia = (count = 1, mediaType = 'photo') => {
  *  catch: function 上传错误
  * }
  */
-const uploadMedia = (count, mediaType = 'photo') => {
+const uploadMedia = (count, mediaType = 'image') => {
   const uploadPromise = getMedia(count, mediaType).then(res => {
     for (let i = 0; i < res.length; i++) {
       allSize.push([res[i].size, 0])
       let uploadFileRes = Taro.uploadFile({
         url: getUrl(uploadConfig.api),
         filePath: res[i].path,
-        name: uploadConfig.requestField,
-        header: requestConfig.header
+        name: uploadConfig.requestField
       })
       uploadFileRes.progress(e => {
         progress(i, e.totalBytesSent)

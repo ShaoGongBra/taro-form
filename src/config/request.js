@@ -13,17 +13,17 @@ export default {
     // 公共请求路径
     path: '',
     /**
-     * 请求header
-     * 如需其他header请依次添加在后面
+     * Content-Type 请求媒体类型 有效值如下
+     * 设置这个值将用户post请求的时候设置请求body类型
+     * application/json
+     * application/x-www-form-urlencoded
+     */
+    contentType: 'application/json',
+    /**
+     * 公共请求header
      */
     header: {
-      /**
-       * Content-Type 请求媒体类型 有效值如下
-       * 设置这个值将用户post请求的时候设置请求body类型
-       * application/json
-       * application/x-www-form-urlencoded
-       */
-      'Content-Type': 'application/json'
+
     },
     /**
      * 要携带在请求上的参数

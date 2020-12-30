@@ -4,13 +4,10 @@ import { View, Text, Image } from '@tarojs/components'
 import Icon from '../../../components/icon'
 import Base from './base'
 import { toast } from '../../../utils'
+import { uploadMedia } from '../../../utils/request'
 import './upload.scss'
 
 export default class UploadForm extends Component {
-
-  componentDidMount() {
-
-  }
 
   getValue() {
     let { value = [] } = this.props
@@ -29,20 +26,25 @@ export default class UploadForm extends Component {
   }
 
   add() {
-    const { data = {} } = this.props
-    const value = this.getValue()
-    if (value.length >= data.max) {
-      toast('最多上传' + data.max + '张')
+    const { data = {}, config = {} } = this.props
+    if (config.edit) {
       return
     }
-    // uploadMedia(data.max - value.length).then(res => {
-    //   value.push(...res)
-    //   this.props.onEvent({
-    //     event: 'input',
-    //     component: data,
-    //     value: this.setValue(value)
-    //   })
-    // })
+    const value = this.getValue()
+    if (value.length >= data.max) {
+      toast('最多上传' + data.max)
+      return
+    }
+    if (data.type === 'media') {
+      uploadMedia(data.max - value.length, data.mediaType).then(res => {
+        value.push(...res)
+        this.props.onEvent({
+          event: 'input',
+          component: data,
+          value: this.setValue(value)
+        })
+      })
+    }
   }
 
   del(index) {
@@ -59,11 +61,24 @@ export default class UploadForm extends Component {
   render() {
     const { data = {} } = this.props
     const value = this.getValue()
+    const icons = {
+      'media-image': 'tupian1',
+      'media-video': 'shipindefuben',
+      'media-all': 'duomeitiwenjian',
+      'file-': 'wenjianjia'
+    }
+    const texts = {
+      'media-image': '添加图片',
+      'media-video': '添加视频',
+      'media-all': '添加图片视频',
+      'file-': '添加文件'
+    }
+    const name = `${data.type}-${data.type === 'media' ? data.mediaType : ''}`
     return <Base {...this.props}>
       <View className='form-upload'>
         {!data.disabled && <View activeOpacity={1} className='form-upload__add' onClick={this.add.bind(this)}>
-          <Icon name='tupian1' size={60} color='#AAAAAA' />
-          <Text className='form-upload__add__text'>添加图片</Text>
+          <Icon name={icons[name]} size={60} color='#AAAAAA' />
+          <Text className='form-upload__add__text'>{texts[name]}</Text>
         </View>}
         {
           value.map((item, index) => <View key={item} className='form-upload__item'>

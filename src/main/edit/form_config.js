@@ -466,13 +466,29 @@ const config = {
         return {
           ...getPublicAttr.call(this),
           max: 1, // 最大文件数
+          type: 'media', // 上传类型 media媒体 file文件
+          mediaType: 'image', // image 图片 video 视频
+          exts: [], // 支持的文件扩展名 当选择文件时有效
         }
       },
       form() {
+        const key = getKey()
         return [
           ...getPublicAttrForm.call(this),
           Create.init('panel').panel(this.text + '属性').child([
-            Create.init('input', '最大文件数', 'max').inputNumber().get()
+            Create.init('input', '最大文件数', 'max').inputNumber().get(),
+            Create.init('select', '上传类型', 'type', key).select([
+              { text: '影音', value: 'media' },
+              { text: '普通文件', value: 'file' }
+            ]).get(),
+            Create.init('select', '上传类型', 'mediaType').select([
+              { text: '图片', value: 'image' },
+              { text: '视频', value: 'video' },
+              { text: '图片和视频', value: 'all' }
+            ]).where(key, '==', 'media').get(),
+            Create.init('array-one', '扩展名', 'exts').where(key, '==', 'file').child([
+              Create.init('input', '扩展名', '0').get(),
+            ]).get(),
           ]).get()
         ]
       }
