@@ -134,10 +134,10 @@ const styleConfig = {
     ])
   },
   flexWrap: {
-    attr: () => ({ flexWrap: 'warp' }),
+    attr: () => ({ flexWrap: 'wrap' }),
     form: () => ([
       quickForm.select('flexWrap', '换行', [
-        { text: '自动换行', value: 'warp' },
+        { text: '自动换行', value: 'wrap' },
         { text: '不换行', value: 'nowrap' }
       ])
     ])
