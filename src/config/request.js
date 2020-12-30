@@ -14,12 +14,12 @@ export default {
     path: '',
     /**
      * 请求header
+     * 如需其他header请依次添加在后面
      */
     header: {
       /**
        * Content-Type 请求媒体类型 有效值如下
        * 设置这个值将用户post请求的时候设置请求body类型
-       * 如需其他header请依次添加在后面
        * application/json
        * application/x-www-form-urlencoded
        */
@@ -82,6 +82,6 @@ export default {
     // 上传文件时的字段名
     requestField: 'file',
     // 返回值的图片路径的url 如果有多级可以配置数组 如[0, url]
-    resultField: 'url',
+    resultField: ['data', 'result', 0, 'url'],
   }
 }
