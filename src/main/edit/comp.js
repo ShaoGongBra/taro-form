@@ -62,7 +62,7 @@ export default {
    */
   attrTransform(attr) {
     // 这些字段表示是样式
-    const styleNames = ['style', 'compStyle', 'compTextStyle', 'compTipStyle']
+    const styleNames = ['style', 'compStyle', 'compTextStyle', 'textStyle', 'compTipStyle']
     const numberStyles = ['width', 'height', 'top', 'left', 'right', 'bottom', 'padding', 'paddingLeft', 'paddingTop', 'paddingBottom', 'paddingRight', 'margin', 'marginLeft', 'marginTop', 'marginRight', 'marginBottom', 'fontSize', 'borderWidth', 'borderTopWidth', 'borderRightWidth', , 'borderBottomWidth', , 'borderLeftWidth', 'borderRadius']
     for (let i = 0; i < styleNames.length; i++) {
       const name = styleNames[i]

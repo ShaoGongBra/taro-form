@@ -1,0 +1,12 @@
+.form-segment {
+  flex-direction: row;
+  align-items: center;
+
+  &__line {
+    border-width: 0;
+  }
+
+  &__text {
+    padding: 0 10px;
+  }
+}

@@ -26,7 +26,7 @@ const styleConfig = {
     form: () => ([quickForm.number('fontSize', '字号')])
   },
   padding: {
-    attr: () => ({ padding: '', paddingLeft: '', paddingRight: '', paddingTop: '', paddingBottom: '' }),
+    attr: () => ({ padding: '', paddingTop: '', paddingRight: '', paddingBottom: '', paddingLeft: '' }),
     form: () => ([
       Create.init('compose').child([
         quickForm.number('padding', '内边距'),
@@ -38,7 +38,7 @@ const styleConfig = {
     ])
   },
   margin: {
-    attr: () => ({ margin: '', marginLeft: '', marginRight: '', marginTop: '', marginBottom: '' }),
+    attr: () => ({ margin: '', marginTop: '', marginRight: '', marginBottom: '', marginLeft: '' }),
     form: () => ([
       Create.init('compose').child([
         quickForm.number('margin', '外边距'),
@@ -175,7 +175,11 @@ export default {
     let data = {}
     for (let i = 0, l = list.length; i < l; i++) {
       if (list[i].value && list[i].name) {
-        data[list[i].name] = list[i].value
+        if (typeof list[i].value === 'object') {
+          data = { ...data, ...styleConfig[list[i].name].attr(), ...list[i].value }
+        } else {
+          data[list[i].name] = list[i].value
+        }
       } else {
         data = { ...data, ...styleConfig[list[i]].attr() }
       }

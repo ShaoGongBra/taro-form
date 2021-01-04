@@ -477,18 +477,18 @@ const config = {
           ...getPublicAttrForm.call(this),
           Create.init('panel').panel(this.text + '属性').child([
             Create.init('input', '最大文件数', 'max').inputNumber().get(),
-            Create.init('select', '上传类型', 'type', key).select([
-              { text: '影音', value: 'media' },
-              { text: '普通文件', value: 'file' }
-            ]).get(),
+            // Create.init('select', '上传类型', 'type', key).select([
+            //   { text: '影音', value: 'media' },
+            //   { text: '普通文件', value: 'file' }
+            // ]).get(),
             Create.init('select', '上传类型', 'mediaType').select([
               { text: '图片', value: 'image' },
               { text: '视频', value: 'video' },
               { text: '图片和视频', value: 'all' }
-            ]).where(key, '==', 'media').get(),
-            Create.init('array-one', '扩展名', 'exts').where(key, '==', 'file').child([
-              Create.init('input', '扩展名', '0').get(),
             ]).get(),
+            // Create.init('array-one', '扩展名', 'exts').where(key, '==', 'file').child([
+            //   Create.init('input', '扩展名', '0').get(),
+            // ]).get(),
           ]).get()
         ]
       }
@@ -900,6 +900,43 @@ const config = {
             Create.init('icon-select', '图标', 'name').get(),
             Create.init('input', '字号', 'size').inputNumber().get(),
             Create.init('color', '颜色', 'color').get()
+          ]).get()
+        ]
+      }
+    },
+    segment: {
+      tpl: 'segment',
+      text: '分割线',
+      cate: 'view',
+      publicAttr: ['showWhere', ['style', [{ name: 'padding', value: { paddingTop: 10, paddingBottom: 10 } }, 'backgroundColor']], ['textStyle', ['fontSize', 'color']]],
+      attr() {
+        return {
+          ...getPublicAttr.call(this),
+          borderStyle: 'solid',
+          borderTopWidth: 1,
+          borderColor: '#333',
+          textAlign: 'center',
+          text: '分割线',
+        }
+      },
+      form() {
+        return [
+          ...getPublicAttrForm.call(this),
+          Create.init('panel').panel(this.text + '属性').child([
+            Create.init('input', '文本', 'text').get(),
+            Create.init('select', '文本位置', 'textAlign').select([
+              { text: '居左', value: 'left' },
+              { text: '居中', value: 'center' },
+              { text: '居右', value: 'right' }
+            ]).get(),
+            Create.init('select', '线条样式', 'borderStyle').select([
+              { text: '实线', value: 'solid' },
+              { text: '点状', value: 'dotted' },
+              { text: '虚线', value: 'dashed' },
+              { text: '双线', value: 'double' }
+            ]).get(),
+            Create.init('color', '线条颜色', 'borderColor').get(),
+            Create.init('input', '线条高度', 'borderTopWidth').inputNumber().get()
           ]).get()
         ]
       }

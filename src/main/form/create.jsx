@@ -30,6 +30,7 @@ import BackgroundLayout from './layout/background'
 import ImageView from './view/image'
 import TextView from './view/text'
 import IconView from './view/icon'
+import SegmentView from './view/segment'
 import EditTypes from '../edit/editTypes'
 import comp from '../edit/comp'
 import { ConfigContext } from './util'
@@ -359,6 +360,9 @@ export default (props) => {
       }
       case 'icon': {
         return <IconView {...compData} />
+      }
+      case 'segment': {
+        return <SegmentView {...compData} />
       }
       default: {
         return null
