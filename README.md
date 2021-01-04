@@ -41,7 +41,7 @@ http://form.t.platelet.xyz/
 - text 文本组件
 - image 图片组件
 - icon 图标组件
-- segment 分割线组件 待实现
+- segment 分割线组件
 ## 布局组件
 - felx 栅格（flex）布局
 - tab tab布局
