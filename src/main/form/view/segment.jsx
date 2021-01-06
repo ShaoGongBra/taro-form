@@ -14,13 +14,15 @@ export default class SegmentView extends Component {
 
   getStyle(pos, data) {
     const style = {
-      borderTopWidth: Taro.pxTransform(data.borderTopWidth),
       borderStyle: data.borderStyle,
-      borderColor: data.borderColor
+      borderColor: data.borderColor,
+      borderWidth: 0,
+      borderTopWidth: Taro.pxTransform(data.borderTopWidth),
     }
     if (pos !== data.textAlign) {
-      style.flex = 1
+      style.flexGrow = 1
     } else {
+      style.flexGrow = 0
       style.width = Taro.pxTransform(50)
     }
     return style
