@@ -268,12 +268,12 @@ const config = {
               { text: '图片', value: 'image', image: '' },
               { text: '颜色', value: 'color', image: '' }
             ], 'radio', 'show', 'text').get(),
-            Create.init('array-two', '选项', 'option').config({ row: false }).child([
-              Create.init('input', '文本', 'text').style({ width: 200 }).where(key, '!=', 'color').get(),
-              Create.init('input', '值', 'value').style({ width: 150 }).get(),
-              Create.init('upload', '图片', 'image').style({ width: 200 }).where(key, '==', ['card', 'image', 'button']).get(),
-              Create.init('input', '描述', 'desc').style({ width: 200 }).where(key, '==', ['card', 'text', 'image']).get(),
-              Create.init('color', '颜色', 'color').style({ width: 200 }).where(key, '==', 'color').get()
+            Create.init('array-two', '选项', 'option').style({ flexDirection: 'column', alignItems: 'stretch' }).option({ compTextStyle: { textAlign: 'left' } }).child([
+              Create.init('input', '文本', 'text').option({ parentAttr: { style: { width: 200 } } }).where(key, '!=', 'color').get(),
+              Create.init('input', '值', 'value').option({ parentAttr: { style: { width: 150 } } }).get(),
+              Create.init('upload', '图片', 'image').option({ parentAttr: { style: { width: 200 } } }).where(key, '==', ['card', 'image', 'button']).get(),
+              Create.init('input', '描述', 'desc').option({ parentAttr: { style: { width: 200 } } }).where(key, '==', ['card', 'text', 'image']).get(),
+              Create.init('color', '颜色', 'color').option({ parentAttr: { style: { width: 200 } } }).where(key, '==', 'color').get()
             ]).get()
           ]).get()
         ]
