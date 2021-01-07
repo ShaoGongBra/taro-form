@@ -271,7 +271,7 @@ const config = {
             Create.init('array-two', '选项', 'option').style({ flexDirection: 'column', alignItems: 'stretch' }).option({ compTextStyle: { textAlign: 'left' } }).child([
               Create.init('input', '文本', 'text').option({ parentAttr: { style: { width: 200 } } }).where(key, '!=', 'color').get(),
               Create.init('input', '值', 'value').option({ parentAttr: { style: { width: 150 } } }).get(),
-              Create.init('upload', '图片', 'image').option({ parentAttr: { style: { width: 200 } } }).where(key, '==', ['card', 'image', 'button']).get(),
+              Create.init('upload', '图片', 'image').option({ parentAttr: { style: { width: 200 } }, max: 1, type: 'media', mediaType: 'image' }).where(key, '==', ['card', 'image', 'button']).get(),
               Create.init('input', '描述', 'desc').option({ parentAttr: { style: { width: 200 } } }).where(key, '==', ['card', 'text', 'image']).get(),
               Create.init('color', '颜色', 'color').option({ parentAttr: { style: { width: 200 } } }).where(key, '==', 'color').get()
             ]).get()
@@ -658,7 +658,7 @@ const config = {
       form() {
         return [
           ...getPublicAttrForm.call(this),
-          Create.init('upload', '背景图', 'src').get(),
+          Create.init('upload', '背景图', 'src').option({ max: 1, type: 'media', mediaType: 'image' }).get(),
         ]
       }
     },
@@ -848,7 +848,7 @@ const config = {
         return [
           ...getPublicAttrForm.call(this),
           Create.init('panel').panel(this.text + '属性').child([
-            Create.init('upload', '图片', 'src').get(),
+            Create.init('upload', '图片', 'src').option({ max: 1, type: 'media', mediaType: 'image' }).get(),
             Create.init('select', '裁剪', 'mode').select([
               { text: '缩放', value: 'scaleToFill', desc: '不保持纵横比缩放图片，使图片的宽高完全拉伸至填满 image 元素' },
               { text: '缩放显示长边', value: 'aspectFit', desc: '保持纵横比缩放图片，使图片的长边能完全显示出来。也就是说，可以完整地将图片显示出来。' },
