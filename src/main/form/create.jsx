@@ -173,29 +173,7 @@ const ContextData = ({ compName, children, config }) => {
     : children
 }
 
-export default (props) => {
-  const { form = [], disabled, config = {}, values = {}, indexs = [], compName = 'form', onEvent, moveForm, editForm, editInfo = {} } = props
-  // 组件事件
-  const event = (item, index, data) => {
-    // 表单自身禁用或者整个表单禁用 则触发事件
-    if (item.disabled || disabled) {
-      return
-    }
-    if (data.keys === undefined) {
-      data.keys = []
-    }
-    if (data.indexs === undefined) {
-      data.indexs = []
-    }
-    if (data.names === undefined) {
-      data.names = []
-    }
-    data.keys.unshift(item.key)
-    data.indexs.unshift(index)
-    typeof item.name !== 'undefined' && data.names.unshift(item.name)
-    onEvent && onEvent(data)
-  }
-
+const CreateDrop = ({ compName, form, indexs, moveForm, editForm, editInfo }) => {
   const [{ over }, drop] = useDrop({
     accept: [EditTypes.FORM_ADD, EditTypes.FORM_MOVE],
     hover(item, monitor) {
@@ -251,6 +229,42 @@ export default (props) => {
       }
     }
   })
+
+  return <View
+    ref={drop}
+    className={`form-create__edit${over ? ' form-create__edit--drop' : ''}`}
+    onClick={() => {
+      compName === 'page' && editForm([])
+    }}
+  >
+    <Text className='form-create__edit__title'>{editInfo.title}</Text>
+    {!!editInfo.desc && <Text className='form-create__edit__desc'>{over ? '放开添加' : editInfo.desc}</Text>}
+  </View>
+}
+
+
+export default (props) => {
+  const { form = [], disabled, config = {}, values = {}, indexs = [], compName = 'form', onEvent, moveForm, editForm, editInfo = {} } = props
+  // 组件事件
+  const event = (item, index, data) => {
+    // 表单自身禁用或者整个表单禁用 则触发事件
+    if (item.disabled || disabled) {
+      return
+    }
+    if (data.keys === undefined) {
+      data.keys = []
+    }
+    if (data.indexs === undefined) {
+      data.indexs = []
+    }
+    if (data.names === undefined) {
+      data.names = []
+    }
+    data.keys.unshift(item.key)
+    data.indexs.unshift(index)
+    typeof item.name !== 'undefined' && data.names.unshift(item.name)
+    onEvent && onEvent(data)
+  }
 
   /**
    * 获取表单项
@@ -388,16 +402,7 @@ export default (props) => {
           getItem(item, index)
         )
       }
-      {!!editInfo.title && <View
-        ref={drop}
-        className={`form-create__edit${over ? ' form-create__edit--drop' : ''}`}
-        onClick={() => {
-          compName === 'page' && editForm([])
-        }}
-      >
-        <Text className='form-create__edit__title'>{editInfo.title}</Text>
-        {!!editInfo.desc && <Text className='form-create__edit__desc'>{over ? '放开添加' : editInfo.desc}</Text>}
-      </View>}
+      {!!editInfo.title && <CreateDrop editInfo={editInfo} compName={compName} editForm={editForm} moveForm={moveForm} indexs={indexs} form={form} />}
     </ContextData>
   )
 }
