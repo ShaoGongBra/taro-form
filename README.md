@@ -12,7 +12,12 @@ http://form.t.platelet.xyz/
  + qq群：816711392
  + ![](./image/qq.jpg)
 # 使用
-将代码克隆到本地，执行 `yarn` 或者 `npm install` ，安装依赖，然后执行 `yarn dev:h5` 或者 `npm run dev:h5` 启动h5版本，其他版本尚未兼容
++ h5端：
+将代码克隆到本地，执行 `yarn` 或者 `npm install` ，安装依赖，然后执行 `yarn dev:h5` 或者 `npm run dev:h5` 启动h5版本，跳转到`main/edit/index`页面即可进入编辑模式
++ 小程序端： 
+将代码克隆到本地，执行 `yarn` 或者 `npm install` ，安装依赖，然后执行 `yarn dev:weapp` 或者 `npm run dev:weapp` 启动微信小程序版本，微信小程序仅支持表单查看页面
++ RN端暂未调试，目前不兼容
+
 # 组件支持
 ## 基本组件
 - input 输入框
