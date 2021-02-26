@@ -5,13 +5,6 @@ import './flex.scss'
 
 export default class FlexForm extends Component {
 
-  static options = {
-    // 组件使用全局样式
-    addGlobalClass: true,
-    // 虚拟组件
-    virtualHost: true
-  }
-
   event(index, e) {
     const { data = {} } = this.props
     e.keys.unshift(data.key)

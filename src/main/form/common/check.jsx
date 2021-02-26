@@ -6,13 +6,6 @@ import './check.scss'
 
 export default class CheckForm extends Component {
 
-  static options = {
-    // 组件使用全局样式
-    addGlobalClass: true,
-    // 虚拟组件
-    virtualHost: true
-  }
-
   input() {
     const { data, value } = this.props
     this.props.onEvent({

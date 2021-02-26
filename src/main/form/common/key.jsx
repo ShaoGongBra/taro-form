@@ -18,13 +18,6 @@ export default class KeyForm extends Component {
     }
   }
 
-  static options = {
-    // 组件使用全局样式
-    addGlobalClass: true,
-    // 虚拟组件
-    virtualHost: true
-  }
-
   render() {
     const { value = '' } = this.props
     return <Base {...this.props}>

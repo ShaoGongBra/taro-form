@@ -5,13 +5,6 @@ import './segment.scss'
 
 export default class SegmentView extends Component {
 
-  static options = {
-    // 组件使用全局样式
-    addGlobalClass: true,
-    // 虚拟组件
-    virtualHost: true
-  }
-
   getStyle(pos, data) {
     const style = {
       borderStyle: data.borderStyle,

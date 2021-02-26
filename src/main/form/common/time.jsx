@@ -5,13 +5,6 @@ import './time.scss'
 
 export default class TimeForm extends Component {
 
-  static options = {
-    // 组件使用全局样式
-    addGlobalClass: true,
-    // 虚拟组件
-    virtualHost: true
-  }
-
   input(e) {
     const { data } = this.props
     this.props.onEvent({

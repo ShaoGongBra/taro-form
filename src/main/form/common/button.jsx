@@ -6,13 +6,6 @@ import './button.scss'
 
 export default class ButtonForm extends Component {
 
-  static options = {
-    // 组件使用全局样式
-    addGlobalClass: true,
-    // 虚拟组件
-    virtualHost: true
-  }
-
   click() {
     const { data = {} } = this.props
     this.props.onEvent({

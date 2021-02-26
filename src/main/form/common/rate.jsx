@@ -6,13 +6,6 @@ import './rate.scss'
 
 export default class RateForm extends Component {
 
-  static options = {
-    // 组件使用全局样式
-    addGlobalClass: true,
-    // 虚拟组件
-    virtualHost: true
-  }
-
   input(value) {
     const { data = {} } = this.props
     const { rule = 5 } = data

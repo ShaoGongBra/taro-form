@@ -5,13 +5,6 @@ import './slider.scss'
 
 export default class SliderForm extends Component {
 
-  static options = {
-    // 组件使用全局样式
-    addGlobalClass: true,
-    // 虚拟组件
-    virtualHost: true
-  }
-
   change(e) {
     const { data = {} } = this.props
     this.props.onEvent({

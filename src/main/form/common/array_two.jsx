@@ -9,13 +9,6 @@ import './array_two.scss'
 
 export default class ChildArrayForm extends Component {
 
-  static options = {
-    // 组件使用全局样式
-    addGlobalClass: true,
-    // 虚拟组件
-    virtualHost: true
-  }
-
   event(index, e) {
     e.names.unshift(index)
     e.keys.unshift(index)

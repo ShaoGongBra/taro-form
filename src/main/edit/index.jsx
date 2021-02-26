@@ -1,4 +1,5 @@
 import React, { useState, useCallback, useEffect, useRef } from 'react'
+import Taro from '@tarojs/taro'
 import { View, Text, ScrollView } from '@tarojs/components'
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter'
 import { DndProvider, useDrag, useDrop } from 'react-dnd'
@@ -10,9 +11,10 @@ import Create from '../form/create'
 import Form from '../form/form'
 import EditTypes from './editTypes'
 import comp from './comp'
-import { recursionSetValue, recursionGetValue } from '../../utils/object'
+import { recursionSetValue, recursionGetValue, objectToString } from '../../utils/object'
 import testData from '../form/testData'
 import './index.scss'
+import { toast } from '../../utils'
 
 const Code = ({ children, lang = 'json' }) => {
   return <SyntaxHighlighter
@@ -67,7 +69,8 @@ const Edit = () => {
     { name: '电脑', icon: 'dianshi', width: 1280 }
   ])
   const [previewPhoneHover, setPreviewPhoneHover] = useState(0)
-  const [showJson, setShowJson] = useState(false)
+  const [showJson, setShowJson] = useState('')
+  const [jsonType, setJsonType] = useState('Object')
 
   const pullView = useRef(null)
 
@@ -205,7 +208,7 @@ const Edit = () => {
       </View>
       <View
         className='cate'
-        onClick={() => setShowJson(true)}
+        onClick={() => setShowJson('form')}
       >
         <Text className='cate-name'>JSON</Text>
       </View>
@@ -275,13 +278,37 @@ const Edit = () => {
         </View>
       </View>
     </PullView>}
-    {showJson && <PullView side='top' onClose={() => setShowJson(false)}>
+    {!!showJson && <PullView side='top' onClose={() => setShowJson('')}>
       <View className='json'>
-        <ScrollView scrollY scrollX className='main'>
-          <Code>
-            {JSON.stringify(list, null, 2)}
-          </Code>
-        </ScrollView>
+        <View className='head'>
+          <Text className={`item${showJson === 'form' ? ' select' : ''}`} onClick={() => setShowJson('form')}>Form</Text>
+          <Text className={`item${showJson === 'config' ? ' select' : ''}`} onClick={() => setShowJson('config')}>Config</Text>
+        </View>
+        <View className='main'>
+          <ScrollView scrollY scrollX className='scroll'>
+            <Code>
+              {objectToString(showJson === 'form' ? list : config, null, 2, jsonType === 'Object')}
+            </Code>
+          </ScrollView>
+          <View className='type'>
+            <Text className={`item${jsonType === 'Object' ? ' select' : ''}`} onClick={() => setJsonType('Object')}>Object</Text>
+            <Text className={`item${jsonType === 'JSON' ? ' select' : ''}`} onClick={() => setJsonType('JSON')}>JSON</Text>
+          </View>
+          <View
+            className='copy'
+            onClick={async () => {
+              try {
+                await Taro.setClipboardData({ data: objectToString(showJson === 'form' ? list : config, null, 2, jsonType === 'Object') })
+                Taro.showToast({ title: '复制成功' })
+              } catch (error) {
+                toast('复制失败')
+              }
+            }}
+          >
+            <Icon name='wenjian' color='#666' size={24} />
+            <Text className='text'>复制</Text>
+          </View>
+        </View>
       </View>
     </PullView>}
     <View className={`delete${deleteShow ? ' delete-show' : ''}${deleteOver ? ' delete-over' : ''}`} ref={dropDelete}>

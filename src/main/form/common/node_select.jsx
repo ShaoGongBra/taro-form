@@ -11,13 +11,6 @@ export default class NodeSelectForm extends Component {
     show: false
   }
 
-  static options = {
-    // 组件使用全局样式
-    addGlobalClass: true,
-    // 虚拟组件
-    virtualHost: true
-  }
-
   input(item) {
     const { data = {} } = this.props
     if (this.isDisable(item)) {

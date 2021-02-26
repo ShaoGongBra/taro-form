@@ -5,13 +5,6 @@ import './column.scss'
 
 export default class ColumnForm extends Component {
 
-  static options = {
-    // 组件使用全局样式
-    addGlobalClass: true,
-    // 虚拟组件
-    virtualHost: true
-  }
-
   render() {
     const { data = {}, config = {} } = this.props
     return <View

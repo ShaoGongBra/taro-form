@@ -11,9 +11,10 @@ let nameIndex = 1
 /**
  * 获取公共属性
  */
-const getPublicAttr = function () {
-  const data = {
-    key: getKey(),
+const getPublicAttr = function (noSetKey = false) {
+  const data = {}
+  if (!noSetKey) {
+    data.key = getKey()
   }
   for (let i = 0; i < this.publicAttr.length; i++) {
     const item = this.publicAttr[i]
@@ -513,7 +514,7 @@ const config = {
           ['flex', 'width']
         ]],
         attr() {
-          return getPublicAttr.call(this)
+          return getPublicAttr.call(this, true)
         },
         form() {
           return getPublicAttrForm.call(this)

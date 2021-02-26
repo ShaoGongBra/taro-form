@@ -21,13 +21,6 @@ export default class PanelForm extends Component {
 
   oldOpen = true
 
-  static options = {
-    // 组件使用全局样式
-    addGlobalClass: true,
-    // 虚拟组件
-    virtualHost: true
-  }
-
   render() {
     const { show } = this.state
     const { data = {}, config = {} } = this.props

@@ -4,13 +4,6 @@ import './text.scss'
 
 export default class ImageView extends Component {
 
-  static options = {
-    // 组件使用全局样式
-    addGlobalClass: true,
-    // 虚拟组件
-    virtualHost: true
-  }
-
   render() {
     const { data = {} } = this.props
     return <Image

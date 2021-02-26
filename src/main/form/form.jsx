@@ -107,7 +107,7 @@ export default class FormComponent extends Component {
         // input失去焦点事件
         this.checkVerify(data.keys[data.keys.length - 1])
         break
-        case 'input':
+      case 'input':
         // 表单输入事件
         const { values } = this.state
         recursionSetValue(data.names, values, data.value)

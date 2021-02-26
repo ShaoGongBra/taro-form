@@ -18,6 +18,7 @@ const objectToForm = data => encodeURIComponent(Object.keys(data).map(key => `${
  * @return {string} 完整请求url
  */
 const getUrl = (url, data = {}) => {
+
   if (url.indexOf('http://') === -1 && url.indexOf('https://') === -1) {
     let urls = []
     if (process.env.NODE_ENV === 'production' && process.env.TARO_ENV === 'h5' && !!window.REQUEST_ORIGIN) {

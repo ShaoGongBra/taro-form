@@ -18,23 +18,24 @@ export default class PullView extends Component {
     const { side = 'bottom' } = this.props
     const { positionOther } = this.state
     // 小程序和h5动画
-    this.query = Taro.createSelectorQuery().in(process.env.TARO_ENV === 'h5' ? this : this.$scope)
-    this.query.select('.pull-view__main').boundingClientRect(res => {
-      switch (side) {
-        case 'left':
-        case 'right':
-          positionOther[side] = res.width + "px"
-          break
-        case 'top':
-        case 'bottom':
-          positionOther[side] = res.height + "px"
-          break
-      }
-      this.setState({
-        positionOther,
-        show: true
-      })
-    }).exec()
+    setTimeout(() => {
+      Taro.createSelectorQuery().select('.pull-view__main').boundingClientRect(res => {
+        switch (side) {
+          case 'left':
+          case 'right':
+            positionOther[side] = res.width + "px"
+            break
+          case 'top':
+          case 'bottom':
+            positionOther[side] = res.height + "px"
+            break
+        }
+        this.setState({
+          positionOther,
+          show: true
+        })
+      }).exec()
+    }, 100)
   }
 
   static options = {

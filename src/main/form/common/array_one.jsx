@@ -9,13 +9,6 @@ import './array_one.scss'
 
 export default class ArrayOneForm extends Component {
 
-  static options = {
-    // 组件使用全局样式
-    addGlobalClass: true,
-    // 虚拟组件
-    virtualHost: true
-  }
-
   event(e) {
     const { data } = this.props
     const [item] = data.child

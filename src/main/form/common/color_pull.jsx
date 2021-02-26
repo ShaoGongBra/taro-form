@@ -12,13 +12,6 @@ export default class ColorPullForm extends Component {
     show: false
   }
 
-  static options = {
-    // 组件使用全局样式
-    addGlobalClass: true,
-    // 虚拟组件
-    virtualHost: true
-  }
-
   callback
   select() {
     this.setState({ show: true })
@@ -39,7 +32,6 @@ export default class ColorPullForm extends Component {
 
   render() {
     const { colors, show } = this.state
-    const { } = this.props
     return show && <PullView ref={ref => this.pullView = ref} onClose={this.close.bind(this)}>
       <View className='form-color-pull'>
         {colors.map(item => <View

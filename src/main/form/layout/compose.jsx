@@ -10,13 +10,6 @@ export default class ComposeForm extends Component {
     show: false
   }
 
-  static options = {
-    // 组件使用全局样式
-    addGlobalClass: true,
-    // 虚拟组件
-    virtualHost: true
-  }
-
   render() {
     const { show } = this.state
     const { data = { child: [] }, config = {} } = this.props

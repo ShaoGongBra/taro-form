@@ -18,13 +18,6 @@ export default class IconSelectPullForm extends Component {
     iconShow: false
   }
 
-  static options = {
-    // 组件使用全局样式
-    addGlobalClass: true,
-    // 虚拟组件
-    virtualHost: true
-  }
-
   callback
   select() {
     this.setState({ show: true })

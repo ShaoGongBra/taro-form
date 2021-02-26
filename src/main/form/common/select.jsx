@@ -14,13 +14,6 @@ export default class SelectForm extends Component {
     show: false
   }
 
-  static options = {
-    // 组件使用全局样式
-    addGlobalClass: true,
-    // 虚拟组件
-    virtualHost: true
-  }
-
   input(item, isSelect) {
     let { data = {}, config = {}, value } = this.props
     if (config.edit || isSelect) {

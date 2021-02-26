@@ -5,13 +5,6 @@ import './object.scss'
 
 export default class ObjectForm extends Component {
 
-  static options = {
-    // 组件使用全局样式
-    addGlobalClass: true,
-    // 虚拟组件
-    virtualHost: true
-  }
-
   render() {
     const { data = {}, config = {}, value } = this.props
     return <View className={`form-object${config.edit ? ' form-object--edit' : ''}`}>

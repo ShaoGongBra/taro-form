@@ -6,13 +6,6 @@ import './steep.scss'
 
 export default class SteepForm extends Component {
 
-  static options = {
-    // 组件使用全局样式
-    addGlobalClass: true,
-    // 虚拟组件
-    virtualHost: true
-  }
-
   change(type) {
     const { data = {}, value = 0 } = this.props
     const { min = 0, max = 9, step = 1 } = data

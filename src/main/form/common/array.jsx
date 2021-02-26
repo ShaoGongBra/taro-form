@@ -5,13 +5,6 @@ import './array.scss'
 
 export default class ArrayForm extends Component {
 
-  static options = {
-    // 组件使用全局样式
-    addGlobalClass: true,
-    // 虚拟组件
-    virtualHost: true
-  }
-
   // 递归获取子表单
   getChild(list, index = [0]) {
     return list.map(item => {

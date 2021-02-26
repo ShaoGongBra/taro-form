@@ -10,13 +10,6 @@ export default class TabForm extends Component {
     hover: 0
   }
 
-  static options = {
-    // 组件使用全局样式
-    addGlobalClass: true,
-    // 虚拟组件
-    virtualHost: true
-  }
-
   switch(hover, e) {
     e.stopPropagation && e.stopPropagation()
     this.setState({ hover })
