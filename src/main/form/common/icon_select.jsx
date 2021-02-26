@@ -21,7 +21,7 @@ export default class IconSelectForm extends Component {
               component: data,
               value: res
             })
-          })
+          }).catch(() => {})
         }}
       >
         <View className='form-icon-select__icon' style={{ backgroundColor: value || '#fff' }}>

@@ -37,7 +37,7 @@ export default class ColorForm extends Component {
                 component: data,
                 value: res
               })
-            })
+            }).catch(() => {})
           }}
         />
         <Input className='form-color__input' value={value} placeholder='颜色值' onInput={this.input.bind(this)} />
