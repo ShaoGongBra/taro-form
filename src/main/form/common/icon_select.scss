@@ -15,3 +15,60 @@
     font-size: 24px;
   }
 }
+.form-icon-select-pull {
+  background-color: #fff;
+  &__cate {
+    white-space: nowrap;
+    &__item {
+      display: inline-block;
+      border-bottom: 3px solid transparent;
+      padding: 10px 20px;
+      &--hover {
+        border-bottom: 3px solid #666;
+      }
+      &__text {
+        font-size: 24px;
+      }
+    }
+  }
+  &__search{
+    margin: 10px;
+    border: 1px solid #e2e2e2;
+    border-radius: 40px;
+    padding: 4px 20px;
+    &__input{
+      font-size: 24px;
+      color: #666;
+    }
+  }
+  &__scroll {
+    height: 700px;
+  }
+  &__icons {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 10px;
+    &__item {
+      width: 150px;
+      border: 1px solid #e2e2e2;
+      margin: 10px;
+      align-items: center;
+      overflow: hidden;
+      padding: 10px;
+      &--empty {
+        width: 150px;
+        margin: 0 10px;
+      }
+      &__name {
+        font-size: 24px;
+        color: #333;
+        margin: 6px 2px;
+        width: 100%;
+        word-wrap: break-word;
+        word-break: break-all;
+        text-align: center;
+      }
+    }
+  }
+}

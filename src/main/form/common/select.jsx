@@ -3,16 +3,13 @@ import Taro from '@tarojs/taro'
 import { View, Text, Image, ScrollView } from '@tarojs/components'
 import Icon from '../../../components/icon'
 import PullView from '../../../components/overlay/pull_view'
+import TopView from '../../../components/overlay/top_view'
 import Btn from '../../../components/button'
 import Base from './base'
 import { getContrastYIQ } from '../../../utils/color'
 import './select.scss'
 
 export default class SelectForm extends Component {
-
-  state = {
-    show: false
-  }
 
   input(item, isSelect) {
     let { data = {}, config = {}, value } = this.props
@@ -58,6 +55,26 @@ export default class SelectForm extends Component {
     } else {
       return (typeof value === 'string' ? value.split(',') : value).includes(item.value)
     }
+  }
+
+  /**
+   * 弹窗选择
+   */
+  picker() {
+    const { data = {} } = this.props
+    this.key = TopView.add(<PullView
+      ref={ref => this.pullView = ref}
+      style={{ backgroundColor: '#fff', padding: Taro.pxTransform(20) }}
+      onClose={() => TopView.remove(this.key)}
+    >
+      <View className='form-select__pull__head'>
+        <Text className='form-select__pull__head__title'>选择</Text>
+      </View>
+      <ScrollView scrollY className='form-select__pull__scroll'>
+        {this.renderOption()}
+      </ScrollView>
+      {data.type === 'checkbox' && <Btn text='确定' onClick={() => this.pullView.close()} />}
+    </PullView>)
   }
 
   renderItemIcon(item) {
@@ -146,40 +163,24 @@ export default class SelectForm extends Component {
   }
 
   render() {
-    const { show } = this.state
     const { data = { option: [] }, config = {} } = this.props
     const isEmpty = data.option.filter(item => this.isSelect(item)).length === 0
     return <Base {...this.props}>
       {
-        data.mode === 'picker'
-          ? <>
-            <View
-              className='form-select__value'
-              onClick={() => {
-                if (config.edit) {
-                  return
-                }
-                this.setState({ show: true })
-              }}
-            >
-              {this.renderOption(true)}
-              {isEmpty && <Text className='form-select__value__select'>点击选择</Text>}
-            </View>
-            {show && <PullView
-              ref={ref => this.pullView = ref}
-              style={{ backgroundColor: '#fff', padding: Taro.pxTransform(20) }}
-              onClose={() => this.setState({ show: false })}
-            >
-              <View className='form-select__pull__head'>
-                <Text className='form-select__pull__head__title'>选择</Text>
-              </View>
-              <ScrollView scrollY className='form-select__pull__scroll'>
-                {this.renderOption()}
-              </ScrollView>
-              {data.type === 'checkbox' && <Btn text='确定' onClick={() => this.pullView.close()} />}
-            </PullView>}
-          </>
-          : this.renderOption()
+        data.mode === 'picker' ?
+          <View
+            className='form-select__value'
+            onClick={() => {
+              if (config.edit) {
+                return
+              }
+              this.picker()
+            }}
+          >
+            {this.renderOption(true)}
+            {isEmpty && <Text className='form-select__value__select'>点击选择</Text>}
+          </View> :
+          this.renderOption()
       }
     </Base>
   }

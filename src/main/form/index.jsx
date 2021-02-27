@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
-import { View } from '@tarojs/components'
 import ScrollView from '../../components/scrollview'
+import TopView from '../../components/overlay/top_view'
 import Form from './form'
 import data from './testData'
 import './index.scss'
@@ -9,11 +9,11 @@ export default class FormPage extends Component {
 
   render() {
     return (
-      <View className='page-root' style={{ backgroundColor: data.config?.style?.backgroundColor }}>
-        <ScrollView style={{ flex: 1 }}>
+      <TopView style={{ backgroundColor: data.config?.style?.backgroundColor }}>
+        <ScrollView>
           <Form {...data} />
         </ScrollView>
-      </View>
+      </TopView>
     )
   }
 }
