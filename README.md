@@ -3,7 +3,10 @@
 ## 预览版
 当前版本任处于开发阶段，可能存在api改版或者bug修复导致的不兼容问题，请谨慎用于项目中。
 ## 在线预览
+- 表单预览：
 http://form.t.platelet.xyz/
+- 编辑模式：
+http://form.t.platelet.xyz/#/main/edit/index
 ## 截图
 ![](./image/1.jpg)
 ![](./image/2.jpg)
