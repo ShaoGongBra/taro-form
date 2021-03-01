@@ -66,7 +66,7 @@ export default class Header extends Component {
       }, 100)
     }
 
-    return showHeader && <View className={`header${showLine ? ' header--show-line' : ''}${rn && absolute ? ' header--absolute' : ''}`}>
+    return showHeader ? <View className={`header${showLine ? ' header--show-line' : ''}${rn && absolute ? ' header--absolute' : ''}`}>
       <Status barStyle='dark-content' />
       {(!absolute || rn) && <View
         style={{
@@ -114,5 +114,6 @@ export default class Header extends Component {
         }
       </View>
     </View>
+      : null
   }
 }
