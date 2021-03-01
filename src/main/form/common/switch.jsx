@@ -17,7 +17,9 @@ export default class SwitchForm extends Component {
   render() {
     const { data = {}, value } = this.props
     return <Base {...this.props}>
-      <Switch checked={!!value && value !== '0'} disabled={!!data.disabled} onChange={this.input.bind(this)} />
+      <View className='form-switch'>
+        <Switch checked={!!value && value !== '0'} disabled={!!data.disabled} onChange={this.input.bind(this)} />
+      </View>
     </Base>
   }
 

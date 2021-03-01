@@ -1,17 +1,10 @@
 .form-base {
-  &--row {
-    flex-direction: row;
-    align-items: flex-start;
-  }
-  &--center {
-    justify-content: center;
-    align-items: center;
-  }
   &__text {
     padding: 10px;
   }
   &__main {
     flex: 1;
+    min-width: 100px;
     overflow: hidden;
   }
   &__verify {
