@@ -1,0 +1,66 @@
+/*postcss-pxtransform rn eject enable*/
+:host {
+  // z-index: 2;
+  flex-shrink: 0;
+}
+/*postcss-pxtransform rn eject disable*/
+.header {
+  width: 750px;
+  z-index: 1;
+  &--show-line {
+    border-bottom-width: 1px;
+    border-bottom-color: #e2e2e2;
+    /*postcss-pxtransform rn eject enable*/
+    border-bottom-style: solid;
+    /*postcss-pxtransform rn eject disable*/
+  }
+  &--absolute {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    left: 0;
+  }
+  &__main {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1;
+    /*postcss-pxtransform rn eject enable*/
+    transition: opacity 0.1s;
+    /*postcss-pxtransform rn eject disable*/
+    opacity: 0;
+    &--show {
+      opacity: 1;
+    }
+  }
+  &__nav {
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    &__left {
+      align-items: center;
+      flex-direction: row;
+      width: 100px;
+      height: 100%;
+      &__title {
+        color: #070707;
+        font-size: 32px;
+        font-weight: bold;
+        margin-left: 30px;
+      }
+    }
+    &__main {
+      flex: 1;
+    }
+    &__title {
+      text-align: center;
+      font-size: 32px;
+    }
+    &__right {
+      align-items: center;
+      width: 100px;
+    }
+  }
+}

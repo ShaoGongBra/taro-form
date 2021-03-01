@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Switch } from '@tarojs/components'
+import { Switch, View } from '@tarojs/components'
 import Base from './base'
 import './switch.scss'
 

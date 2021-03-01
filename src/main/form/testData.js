@@ -1489,11 +1489,11 @@ export default {
     key: "1614325967392281509",
     disabled: false,
     style: {
-      backgroundColor: ""
+      backgroundColor: "#fff"
     },
     compStyle: {
       flexDirection: "row",
-      alignItems: "stretch",
+      alignItems: "center",
       justifyContent: "flex-start",
       padding: 10
     },

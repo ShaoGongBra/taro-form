@@ -178,7 +178,6 @@ const Picker = ({ data, onInput, onClose, value }) => {
             setItem(e)
             setLocalValue(e.value)
           }
-
         }}
       />
     </ScrollView>
@@ -191,6 +190,10 @@ export default class SelectForm extends Component {
   input(onlySelect, item) {
     const { config = {} } = this.props
     if (config.edit || onlySelect) {
+      if (onlySelect) {
+        // 弹出选择框
+        this.picker()
+      }
       return
     }
     this.props.onEvent(item)
@@ -210,17 +213,18 @@ export default class SelectForm extends Component {
     return <Base {...this.props}>
       {
         data.mode === 'picker' ?
-          <View
-            className='form-select__value'
-            onClick={() => {
-              if (config.edit) {
-                return
-              }
-              this.picker()
-            }}
-          >
+          <View className='form-select__value'>
             <RenderOption {...this.props} onlySelect onInput={this.input.bind(this, true)} />
-            {isEmpty && <Text className='form-select__value__select'>点击选择</Text>}
+            {isEmpty && <Text
+              className='form-select__value__select'
+              onClick={() => {
+                if (config.edit) {
+                  return
+                }
+                console.log('点击')
+                this.picker()
+              }}
+            >点击选择</Text>}
           </View> :
           <RenderOption {...this.props} onInput={this.input.bind(this, false)} />
       }

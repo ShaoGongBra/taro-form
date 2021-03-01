@@ -18,16 +18,15 @@ class CreateEle extends Component {
       page = await TopView.currentPageAsync()
     }
 
+    this.page = page
+
     event.add(page + '-addOverlay', this.add)
     event.add(page + '-removeOverlay', this.remove)
     event.add(page + '-removeAllOverlay', this.removeAll)
   }
 
   componentWillUnmount() {
-    let { page } = this.props
-    if (!page) {
-      page = TopView.currentPage()
-    }
+    const { page = this.page } = this.props
     event.remove(page + '-addOverlay', this.add)
     event.remove(page + '-removeOverlay', this.remove)
     event.remove(page + '-removeAllOverlay', this.removeAll);
@@ -111,9 +110,10 @@ export default class TopView extends Component {
   }
 
   render() {
+    const { children, ...props } = this.props
     return (
-      <View className='page-root'>
-        {this.props.children}
+      <View {...props} style={props.style} className='page-root'>
+        {children}
         <CreateEle />
       </View>
     );

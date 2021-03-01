@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
 import Taro from '@tarojs/taro'
 import { View, Text, Image } from '@tarojs/components'
-// import FastImage from 'react-native-fast-image'
 import Loading from '../loading'
 import { getContrastYIQ } from '../../utils/color'
 import './index.scss'
