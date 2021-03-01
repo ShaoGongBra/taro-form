@@ -1,5 +1,5 @@
 # Taro表单编辑器
-基于Taro3和react-dnd组件开发的表单编辑器，将支持多个平台（小程序、h5、app）目前仍在开发中，暂时兼容h5端，因接口限制，编辑模式仅支持在h5端。
+基于Taro3和react-dnd组件开发的表单编辑器，将支持多个平台（小程序、h5、app）目前仍在开发中，因接口限制，编辑模式仅支持在h5端。
 ## 预览版
 当前版本任处于开发阶段，可能存在api改版或者bug修复导致的不兼容问题，请谨慎用于项目中。
 ## 在线预览
@@ -19,7 +19,9 @@ http://form.t.platelet.xyz/#/main/edit/index
 将代码克隆到本地，执行 `yarn` 或者 `npm install` ，安装依赖，然后执行 `yarn dev:h5` 或者 `npm run dev:h5` 启动h5版本，跳转到`main/edit/index`页面即可进入编辑模式
 + 小程序端： 
 将代码克隆到本地，执行 `yarn` 或者 `npm install` ，安装依赖，然后执行 `yarn dev:weapp` 或者 `npm run dev:weapp` 启动微信小程序版本，微信小程序仅支持表单查看页面
-+ RN端暂未调试，目前不兼容
++ RN端：
+将代码克隆到本地，执行 `yarn` 或者 `npm install` ，安装依赖，然后执行 `yarn dev:rn` 或者 `npm run dev:rn` 启动服务。
+按照官网教程安装调试包后加载代码运行
 
 # 组件支持
 ## 基本组件
