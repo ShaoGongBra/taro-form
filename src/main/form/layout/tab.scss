@@ -1,28 +1,36 @@
-.form-tab{
-  &--row{
+.form-tab {
+  &--row {
     flex-direction: row;
   }
-  &__nav{
+  &__nav {
     flex-shrink: 0;
     align-items: center;
-    &--row{
+    &--row {
       flex-direction: row;
     }
-    &__item{
+    &__item {
       padding: 10px;
-      border-bottom: 4px solid transparent;
-      &--hover{
-        border-bottom: 4px solid #666;
+      border-bottom-width: 4px;
+      border-bottom-color: transparent;
+      /*postcss-pxtransform rn eject enable*/
+      border-bottom-style: solid;
+      /*postcss-pxtransform rn eject disable*/
+      &--hover {
+        border-bottom-width: 4px;
+        border-bottom-color: #666;
+        /*postcss-pxtransform rn eject enable*/
+        border-bottom-style: solid;
+        /*postcss-pxtransform rn eject disable*/
       }
-      &__txt{
+      &__txt {
         font-size: 28px;
         color: #333;
       }
     }
   }
-  &__child{
+  &__child {
     flex: 1;
-    &--edit{
+    &--edit {
       border: 3px dashed #999;
     }
   }

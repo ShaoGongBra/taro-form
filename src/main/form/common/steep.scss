@@ -14,8 +14,10 @@
     align-items: center;
     justify-content: center;
     padding: 0 30px;
+    /*postcss-pxtransform rn eject enable*/
     border-left-style: solid;
     border-right-style: solid;
+    /*postcss-pxtransform rn eject disable*/
     border-left-width: 1px;
     border-left-color: #e2e2e2;
     border-right-width: 1px;

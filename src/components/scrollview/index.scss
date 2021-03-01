@@ -39,7 +39,9 @@
   right: 0;
   // z-index: 2;
   transform: translate3d(0px, 0px, 0px);
+  /*postcss-pxtransform rn eject enable*/
   transition: transform 0s;
+  /*postcss-pxtransform rn eject disable*/
 }
 /*postcss-pxtransform rn eject disable*/
 .scroll-info {

@@ -1,10 +1,11 @@
 import React, { Component } from 'react'
+import { LogBox } from 'react-native'
 import Taro from '@tarojs/taro'
 import { Provider } from 'react-redux'
 
 import configStore from './redux'
 import './utils/global'
-import './static/fonts/icon.css'
+// import './static/fonts/icon.css'
 import './app.scss'
 
 Taro.pxTransform = function (size, designWidth = 750) {
@@ -15,6 +16,18 @@ Taro.pxTransform = function (size, designWidth = 750) {
 }
 
 const store = configStore()
+
+if (process.env.TARO_ENV === 'rn') {
+  // 屏蔽黄屏错误
+  LogBox.ignoreLogs([
+    'Require cycles are allowed',
+    'react-native core and will be removed in a future release',
+    'source.uri',
+    'RNSketchCanvas',
+    'componentWillReceiveProps has been renamed',
+    'componentWillMount has been renamed'
+  ])
+}
 
 class App extends Component {
   componentDidMount() { }

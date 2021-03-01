@@ -67,6 +67,9 @@ const config = {
       filename: 'css/[name].[hash:8].css',
       chunkFilename: 'css/[id].[chunkhash:8].css'
     }
+  },
+  rn: {
+    appName: 'taroForm'
   }
 }
 

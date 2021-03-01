@@ -1,3 +1,4 @@
 export default {
-  navigationBarTitleText: '表单'
+  navigationBarTitleText: '表单',
+  disableScroll: true
 }

@@ -6,3 +6,12 @@
   right: 0;
   bottom: 0;
 }
+.page-root {
+  flex: 1;
+}
+/*postcss-pxtransform rn eject enable*/
+.page-root {
+  height: 100%;
+  height: 100vh;
+}
+/*postcss-pxtransform rn eject disable*/

@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import { View, Text } from '@tarojs/components'
 import ScrollView from '../../components/scrollview'
 import TopView from '../../components/overlay/top_view'
 import Form from './form'

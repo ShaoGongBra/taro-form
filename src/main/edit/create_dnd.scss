@@ -1,0 +1,57 @@
+
+.create-dnd {
+  flex: 1;
+  &__edit {
+    align-items: center;
+    padding: 20px;
+    background-color: #e2e2e2;
+    /*postcss-pxtransform rn eject enable*/
+    transition: background-color 0.3s;
+    /*postcss-pxtransform rn eject disable*/
+    min-width: 300px;
+    flex-shrink: 0;
+    &--drop {
+      background-color: #c2c2c2;
+    }
+    &__title {
+      color: #333;
+      font-size: 28px;
+    }
+    &__desc {
+      font-size: 24px;
+      color: #666;
+      margin-top: 20px;
+    }
+  }
+  &--row {
+    flex-direction: row;
+    width: 100%;
+  }
+  &--wrap {
+    flex-wrap: wrap;
+  }
+}
+
+.form-drag-drop {
+  /*postcss-pxtransform rn eject enable*/
+  transition: opacity 0.2s;
+  /*postcss-pxtransform rn eject disable*/
+  align-items: stretch;
+  &--hover {
+    opacity: 0.1;
+  }
+  &--row {
+    flex-direction: row;
+  }
+  &__add{
+    padding: 20px;
+    align-items: center;
+    justify-content: center;
+    background-color: #e2e2e2;
+    flex-shrink: 0;
+    &__text{
+      font-size: 24px;
+      color: #999;
+    }
+  }
+}

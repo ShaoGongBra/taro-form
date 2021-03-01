@@ -1,4 +1,5 @@
 .form-array-two {
+  /*postcss-pxtransform rn eject enable*/
   white-space: nowrap;
   &::-webkit-scrollbar {
     display: block;
@@ -17,20 +18,29 @@
     border-radius: 5px;
     background-color: #555;
   }
+  /*postcss-pxtransform rn eject disable*/
   &__edit {
     min-width: 100%;
+    /*postcss-pxtransform rn eject enable*/
     display: inline-block;
+    /*postcss-pxtransform rn eject disable*/
     &__main {
       flex-direction: row;
     }
   }
   &__table {
     border: 1px solid #e2e2e2;
+    /*postcss-pxtransform rn eject enable*/
     display: inline-block;
+    /*postcss-pxtransform rn eject disable*/
   }
   &__head {
     flex-direction: row;
-    border-bottom: 1px solid #e2e2e2;
+    border-bottom-width: 1px;
+    border-bottom-color: #e2e2e2;
+    /*postcss-pxtransform rn eject enable*/
+    border-bottom-style: solid;
+    /*postcss-pxtransform rn eject disable*/
     &__item {
       align-items: center;
       justify-content: center;

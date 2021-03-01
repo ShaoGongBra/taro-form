@@ -18,25 +18,37 @@
 .form-icon-select-pull {
   background-color: #fff;
   &__cate {
+    /*postcss-pxtransform rn eject enable*/
     white-space: nowrap;
+    /*postcss-pxtransform rn eject disable*/
     &__item {
+      /*postcss-pxtransform rn eject enable*/
       display: inline-block;
-      border-bottom: 3px solid transparent;
+      /*postcss-pxtransform rn eject disable*/
+      border-bottom-width: 3px;
+      border-bottom-color: transparent;
+      /*postcss-pxtransform rn eject enable*/
+      border-bottom-style: solid;
+      /*postcss-pxtransform rn eject disable*/
       padding: 10px 20px;
       &--hover {
-        border-bottom: 3px solid #666;
+        border-bottom-width: 3px;
+        border-bottom-color: #666;
+        /*postcss-pxtransform rn eject enable*/
+        border-bottom-style: solid;
+        /*postcss-pxtransform rn eject disable*/
       }
       &__text {
         font-size: 24px;
       }
     }
   }
-  &__search{
+  &__search {
     margin: 10px;
     border: 1px solid #e2e2e2;
     border-radius: 40px;
     padding: 4px 20px;
-    &__input{
+    &__input {
       font-size: 24px;
       color: #666;
     }
@@ -65,8 +77,10 @@
         color: #333;
         margin: 6px 2px;
         width: 100%;
+        /*postcss-pxtransform rn eject enable*/
         word-wrap: break-word;
         word-break: break-all;
+        /*postcss-pxtransform rn eject disable*/
         text-align: center;
       }
     }
