@@ -7,13 +7,6 @@ import './index.scss'
 
 export default class Btn extends Component {
 
-  static options = {
-    // 组件使用全局样式
-    addGlobalClass: true,
-    // 虚拟节点
-    virtualHost: true,
-  }
-
   render() {
     const { theme } = global
     const {
