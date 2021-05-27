@@ -31,7 +31,7 @@ http://form.t.platelet.xyz/#/main/edit/index
 - select 多选
 - select 下拉单选
 - select 下拉多选
-- sitch 开关
+- switch 开关
 - check 验证开关
 - steep 进步器
 - slider 拖动条
