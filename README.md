@@ -1,3 +1,5 @@
+# 此项目不再维护
+我们推出了新的编辑器 Taro Design，更易于导入到你的项目，更易于编写组件扩展，仓库地址：https://github.com/ShaoGongBra/taro-design
 # Taro表单编辑器
 基于Taro3和react-dnd组件开发的表单编辑器，将支持多个平台（小程序、h5、app）目前仍在开发中，因接口限制，编辑模式仅支持在h5端。
 ## 预览版
